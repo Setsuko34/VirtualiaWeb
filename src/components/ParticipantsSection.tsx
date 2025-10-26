@@ -1,4 +1,5 @@
-import { Users, Twitch, Youtube, Twitter, Globe } from 'lucide-react';
+import { Users, Globe } from 'lucide-react';
+import { AiOutlineYoutube, AiFillTwitch, AiFillTwitterCircle, AiOutlineTikTok   } from "react-icons/ai";
 import { Paper, Chip } from '@mui/material';
 import { MinecraftSkin3D } from './MinecraftSkin3D';
 import {ParticipantInterface} from '../Interface/ParticipantInterface';
@@ -13,13 +14,15 @@ export function ParticipantsSection() {
   const getSocialIcon = (platform: string) => {
     switch (platform) {
       case 'twitch':
-        return <Twitch className="w-4 h-4" />;
+        return <AiFillTwitch  className="w-4 h-4 text-white" />;
       case 'youtube':
-        return <Youtube className="w-4 h-4" />;
+        return <AiOutlineYoutube  className="w-4 h-4 text-white" />;
       case 'twitter':
-        return <Twitter className="w-4 h-4" />;
+        return <AiFillTwitterCircle className="w-4 h-4 text-white" />;
       case 'website':
-        return <Globe className="w-4 h-4" />;
+        return <Globe className="w-4 h-4 text-white" />;
+        case 'tiktok':
+        return <AiOutlineTikTok  className="w-4 h-4 text-white" />;
       default:
         return null;
     }
@@ -49,7 +52,7 @@ export function ParticipantsSection() {
               <div className="flex flex-col items-center mb-4">
                 <div className="relative">
                   <MinecraftSkin3D 
-                    username={participant.name}
+                    username={participant.minecraftPseudo}
                     width={200}
                     height={250}
                     className="mx-auto"
@@ -106,6 +109,17 @@ export function ParticipantsSection() {
                   >
                     {getSocialIcon('twitter')}
                   </a>
+                )}
+                {participant.socialMedia.tiktok && (
+                    <a
+                        href={`https://www.tiktok.com/@${participant.socialMedia.tiktok.replace('@', '')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-gradient-to-r from-[#69C9D0] to-[#EE1D52] hover:opacity-90 rounded-lg transition-colors"
+                        title="TikTok"
+                    >
+                        {getSocialIcon('tiktok')}
+                    </a>
                 )}
                 {participant.socialMedia.website && (
                   <a 

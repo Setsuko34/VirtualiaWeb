@@ -2,94 +2,163 @@
   {
     "id": "1",
     "name": "VTYukiUwU",
-    "skinUrl": "https://mc-heads.net/avatar/VTYukiUwU/100",
+    "minecraftPseudo": "VTYukiUwU",
     "role": "Mage",
     "socialMedia": {
       "twitch": "vtyukiuwu",
       "twitter": "@VTYukiUwU",
-      "youtube": "@VTYukiUwU"
+      "youtube": "@Yuki____UwU899",
+      "tiktok": "@vtyukiuwu"
     },
     "status": "online"
   },
   {
     "id": "2",
-    "name": "Kaito_Gaming",
-    "skinUrl": "https://mc-heads.net/avatar/Kaito/100",
+    "name": "VTMizuhiro",
+    "minecraftPseudo": "Mizuhir0_",
     "role": "Guerrier",
     "socialMedia": {
-      "youtube": "@KaitoGaming",
-      "twitter": "@kaito_gaming"
+      "twitch": "VTMizuhiro"
     },
     "status": "online"
   },
   {
     "id": "3",
-    "name": "Sakura_Chan",
-    "skinUrl": "https://mc-heads.net/avatar/Sakura/100",
+    "name": "Setsuko_Aka",
+    "minecraftPseudo": "Setsuko_Aka",
     "role": "Alchimiste",
     "socialMedia": {
-      "twitch": "sakura_chan",
-      "twitter": "@sakura_chan",
-      "website": "sakurachan.tv"
+      "twitch": "setsuko_aka",
+      "twitter": "@setsuko_aka",
+      "youtube": "@Setsuko_Aka",
+      "website": "setsukoaka.fr"
     },
     "status": "online"
   },
   {
     "id": "4",
-    "name": "Ryu_Stream",
-    "skinUrl": "https://mc-heads.net/avatar/Ryu/100",
-    "role": "Explorateur",
+    "name": "Karoteuh_",
+    "minecraftPseudo": "Karoteuh",
+    "role": "Alchimiste",
     "socialMedia": {
-      "youtube": "@RyuStream",
-      "twitter": "@ryu_stream"
+      "twitch": "karoteuh_",
+      "youtube": "@Karoteuh_Kuite",
+      "tiktok": "@karoteuh_"
     },
     "status": "online"
   },
   {
     "id": "5",
-    "name": "Miko_VT",
-    "skinUrl": "https://mc-heads.net/avatar/Miko/100",
-    "role": "Architecte",
+    "name": "dollcheshire",
+    "minecraftPseudo": "dollcheshire",
+    "role": "Guerrier",
     "socialMedia": {
-      "twitch": "miko_vt",
-      "twitter": "@miko_vt",
-      "youtube": "@MikoVT"
+      "twitch": "dollcheshire",
+      "twitter": "@ChesCatWonder",
+      "youtube": "@dollcheshire",
+        "tiktok": "@dollcheshire"
     },
     "status": "offline"
   },
   {
     "id": "6",
-    "name": "Hana_Stream",
-    "skinUrl": "https://mc-heads.net/avatar/Hana/100",
-    "role": "Fermière",
-    "socialMedia": {
-      "twitch": "hana_stream",
-      "twitter": "@hana_stream"
-    },
+    "name": "BaySone",
+    "minecraftPseudo": "BaySone",
+    "role": "Participant",
+    "socialMedia": { "twitch": "BaySone" },
     "status": "offline"
   },
   {
     "id": "7",
-    "name": "Zen_Gaming",
-    "skinUrl": "https://mc-heads.net/avatar/Zen/100",
-    "role": "Ingénieur",
-    "socialMedia": {
-      "youtube": "@ZenGaming",
-      "twitter": "@zen_gaming",
-      "website": "zengaming.net"
-    },
+    "name": "Chikahiwo",
+    "minecraftPseudo": "Chikahiwo",
+    "role": "Participant",
+    "socialMedia": { "twitch": "Chikahiwo" },
     "status": "offline"
   },
   {
     "id": "8",
-    "name": "Yuki_VT",
-    "skinUrl": "https://mc-heads.net/avatar/Yuki/100",
-    "role": "Aventurière",
+    "name": "eris_here",
+    "minecraftPseudo": "JustErisHere",
+    "role": "Participant",
     "socialMedia": {
-      "twitch": "yuki_vt",
-      "youtube": "@YukiVT",
-      "twitter": "@yuki_vt"
+      "twitch": "eris_here",
+    "twitter": "@Eris_le_fou",
+    "youtube": "@Eris_here",
+    "tiktok": "@eris_is_here"
     },
     "status": "offline"
+  },
+  {
+    "id": "9",
+    "name": "Tsukayuza",
+    "minecraftPseudo": "Tsukayuza",
+    "role": "Participant",
+    "socialMedia": { "twitch": "Tsukayuza" },
+    "status": "offline"
+  },
+  {
+    "id": "10",
+    "name": "Hellzetsu_God",
+    "minecraftPseudo": "Hellzetsu_God",
+    "role": "Participant",
+    "socialMedia": { "twitch": "Hellzetsu_God" },
+    "status": "offline"
+  },
+  {
+    "id": "11",
+    "name": "Hisoka_VT",
+    "minecraftPseudo": "Hisoka_VT",
+    "role": "Participant",
+    "socialMedia": { "twitch": "Hisoka_VT" },
+    "status": "offline"
+  },
+  {
+    "id": "12",
+    "name": "KamiCie",
+    "minecraftPseudo": "KamiCie",
+    "role": "Participant",
+    "socialMedia": { "twitch": "KamiCie" },
+    "status": "offline"
+  },
+  {
+    "id": "13",
+    "name": "toya_yu",
+    "minecraftPseudo": "toya_yu",
+    "role": "Participant",
+    "socialMedia": { "twitch": "toya_yu" },
+    "status": "offline"
+  },
+  {
+    "id": "14",
+    "name": "babyhawk_vt",
+    "minecraftPseudo": "babyhawk_vt",
+    "role": "Participant",
+    "socialMedia": { "twitch": "babyhawk_vt" },
+    "status": "offline"
+  },
+  {
+    "id": "15",
+    "name": "fulbi",
+    "minecraftPseudo": "fulbi",
+    "role": "Participant",
+    "socialMedia": { "twitch": "fulbi" },
+    "status": "offline"
+  },
+  {
+    "id": "16",
+    "name": "yuutoushiro",
+    "minecraftPseudo": "yuutoushiro",
+    "role": "Participant",
+    "socialMedia": { "twitch": "yuutoushiro" },
+    "status": "offline"
+  },
+  {
+    "id": "17",
+    "name": "Yaochy_0",
+    "minecraftPseudo": "Yaochy_0",
+    "role": "Participant",
+    "socialMedia": { "twitch": "Yaochy_0" },
+    "status": "offline"
   }
-]
+ ]

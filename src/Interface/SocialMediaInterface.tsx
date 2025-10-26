@@ -3,4 +3,5 @@ export interface SocialMediaInterface {
     youtube?: string;
     twitter?: string;
     website?: string;
+    tiktok?: string;
 }
