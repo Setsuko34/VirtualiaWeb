@@ -16,7 +16,7 @@ export function Footer() {
           </p>
           
           <p className="text-gray-500 text-sm flex items-center justify-center gap-2">
-            Fait avec <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pour la communauté VTuber
+            Fait par Setsuko_Aka avec le <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pour Virtualia
           </p>
           
           <p className="text-gray-600 text-xs mt-4">

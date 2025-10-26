@@ -1,0 +1,95 @@
+[
+  {
+    "id": "1",
+    "name": "VTYukiUwU",
+    "skinUrl": "https://mc-heads.net/avatar/VTYukiUwU/100",
+    "role": "Mage",
+    "socialMedia": {
+      "twitch": "vtyukiuwu",
+      "twitter": "@VTYukiUwU",
+      "youtube": "@VTYukiUwU"
+    },
+    "status": "online"
+  },
+  {
+    "id": "2",
+    "name": "Kaito_Gaming",
+    "skinUrl": "https://mc-heads.net/avatar/Kaito/100",
+    "role": "Guerrier",
+    "socialMedia": {
+      "youtube": "@KaitoGaming",
+      "twitter": "@kaito_gaming"
+    },
+    "status": "online"
+  },
+  {
+    "id": "3",
+    "name": "Sakura_Chan",
+    "skinUrl": "https://mc-heads.net/avatar/Sakura/100",
+    "role": "Alchimiste",
+    "socialMedia": {
+      "twitch": "sakura_chan",
+      "twitter": "@sakura_chan",
+      "website": "sakurachan.tv"
+    },
+    "status": "online"
+  },
+  {
+    "id": "4",
+    "name": "Ryu_Stream",
+    "skinUrl": "https://mc-heads.net/avatar/Ryu/100",
+    "role": "Explorateur",
+    "socialMedia": {
+      "youtube": "@RyuStream",
+      "twitter": "@ryu_stream"
+    },
+    "status": "online"
+  },
+  {
+    "id": "5",
+    "name": "Miko_VT",
+    "skinUrl": "https://mc-heads.net/avatar/Miko/100",
+    "role": "Architecte",
+    "socialMedia": {
+      "twitch": "miko_vt",
+      "twitter": "@miko_vt",
+      "youtube": "@MikoVT"
+    },
+    "status": "offline"
+  },
+  {
+    "id": "6",
+    "name": "Hana_Stream",
+    "skinUrl": "https://mc-heads.net/avatar/Hana/100",
+    "role": "Fermière",
+    "socialMedia": {
+      "twitch": "hana_stream",
+      "twitter": "@hana_stream"
+    },
+    "status": "offline"
+  },
+  {
+    "id": "7",
+    "name": "Zen_Gaming",
+    "skinUrl": "https://mc-heads.net/avatar/Zen/100",
+    "role": "Ingénieur",
+    "socialMedia": {
+      "youtube": "@ZenGaming",
+      "twitter": "@zen_gaming",
+      "website": "zengaming.net"
+    },
+    "status": "offline"
+  },
+  {
+    "id": "8",
+    "name": "Yuki_VT",
+    "skinUrl": "https://mc-heads.net/avatar/Yuki/100",
+    "role": "Aventurière",
+    "socialMedia": {
+      "twitch": "yuki_vt",
+      "youtube": "@YukiVT",
+      "twitter": "@yuki_vt"
+    },
+    "status": "offline"
+  }
+]

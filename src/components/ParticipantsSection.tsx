@@ -1,118 +1,14 @@
 import { Users, Twitch, Youtube, Twitter, Globe } from 'lucide-react';
 import { Paper, Chip } from '@mui/material';
 import { MinecraftSkin3D } from './MinecraftSkin3D';
-
-interface Participant {
-  id: string;
-  name: string;
-  skinUrl: string;
-  role: string;
-  socialMedia: {
-    twitch?: string;
-    youtube?: string;
-    twitter?: string;
-    website?: string;
-  };
-  status: 'online' | 'offline';
-}
+import {ParticipantInterface} from '../Interface/ParticipantInterface';
+import participantsList from '../data/participants.json';
+import React from "react";
 
 export function ParticipantsSection() {
   // Mock data pour les participants
-  const participants: Participant[] = [
-    {
-      id: '1',
-      name: 'VTYukiUwU',
-      skinUrl: 'https://mc-heads.net/avatar/VTYukiUwU/100',
-      role: 'Mage',
-      socialMedia: {
-        twitch: 'vtyukiuwu',
-        twitter: '@VTYukiUwU',
-        youtube: '@VTYukiUwU'
-      },
-      status: 'online'
-    },
-    {
-      id: '2',
-      name: 'Kaito_Gaming',
-      skinUrl: 'https://mc-heads.net/avatar/Kaito/100',
-      role: 'Guerrier',
-      socialMedia: {
-        youtube: '@KaitoGaming',
-        twitter: '@kaito_gaming'
-      },
-      status: 'online'
-    },
-    {
-      id: '3',
-      name: 'Sakura_Chan',
-      skinUrl: 'https://mc-heads.net/avatar/Sakura/100',
-      role: 'Alchimiste',
-      socialMedia: {
-        twitch: 'sakura_chan',
-        twitter: '@sakura_chan',
-        website: 'sakurachan.tv'
-      },
-      status: 'online'
-    },
-    {
-      id: '4',
-      name: 'Ryu_Stream',
-      skinUrl: 'https://mc-heads.net/avatar/Ryu/100',
-      role: 'Explorateur',
-      socialMedia: {
-        youtube: '@RyuStream',
-        twitter: '@ryu_stream'
-      },
-      status: 'online'
-    },
-    {
-      id: '5',
-      name: 'Miko_VT',
-      skinUrl: 'https://mc-heads.net/avatar/Miko/100',
-      role: 'Architecte',
-      socialMedia: {
-        twitch: 'miko_vt',
-        twitter: '@miko_vt',
-        youtube: '@MikoVT'
-      },
-      status: 'offline'
-    },
-    {
-      id: '6',
-      name: 'Hana_Stream',
-      skinUrl: 'https://mc-heads.net/avatar/Hana/100',
-      role: 'Fermière',
-      socialMedia: {
-        twitch: 'hana_stream',
-        twitter: '@hana_stream'
-      },
-      status: 'offline'
-    },
-    {
-      id: '7',
-      name: 'Zen_Gaming',
-      skinUrl: 'https://mc-heads.net/avatar/Zen/100',
-      role: 'Ingénieur',
-      socialMedia: {
-        youtube: '@ZenGaming',
-        twitter: '@zen_gaming',
-        website: 'zengaming.net'
-      },
-      status: 'offline'
-    },
-    {
-      id: '8',
-      name: 'Yuki_VT',
-      skinUrl: 'https://mc-heads.net/avatar/Yuki/100',
-      role: 'Aventurière',
-      socialMedia: {
-        twitch: 'yuki_vt',
-        youtube: '@YukiVT',
-        twitter: '@yuki_vt'
-      },
-      status: 'offline'
-    }
-  ];
+  // @ts-ignore
+    const participants: ParticipantInterface[] = participantsList;
 
   const getSocialIcon = (platform: string) => {
     switch (platform) {
@@ -232,6 +128,7 @@ export function ParticipantsSection() {
           <Paper 
             elevation={0}
             className="bg-purple-900/20 border border-purple-500/30 p-6 text-center rounded-lg"
+            sx={{ backgroundColor: 'transparent' }}
           >
             <p className="text-4xl text-purple-400 mb-2">{participants.length}</p>
             <p className="text-gray-400">Participants Total</p>
@@ -239,6 +136,7 @@ export function ParticipantsSection() {
           <Paper 
             elevation={0}
             className="bg-green-900/20 border border-green-500/30 p-6 text-center rounded-lg"
+            sx={{ backgroundColor: 'transparent' }}
           >
             <p className="text-4xl text-green-400 mb-2">
               {participants.filter(p => p.status === 'online').length}
@@ -248,6 +146,7 @@ export function ParticipantsSection() {
           <Paper 
             elevation={0}
             className="bg-pink-900/20 border border-pink-500/30 p-6 text-center rounded-lg"
+            sx={{ backgroundColor: 'transparent' }}
           >
             <p className="text-4xl text-pink-400 mb-2">∞</p>
             <p className="text-gray-400">Aventures à vivre</p>

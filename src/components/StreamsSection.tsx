@@ -1,5 +1,6 @@
 import { Tv, Circle } from 'lucide-react';
-import { Paper, Chip } from '@mui/material';
+import { Paper, Chip, Button}from '@mui/material';
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 interface Stream {
   id: string;
@@ -46,6 +47,11 @@ export function StreamsSection() {
       isLive: true
     }
   ];
+    const multistreamBase = 'https://www.multitwitch.tv';
+    const multistreamUrl =
+        liveStreams.length > 0
+            ? `${multistreamBase}/${liveStreams.map(s => encodeURIComponent(s.vtuberName)).join('/')}`
+            : multistreamBase;
 
   return (
     <section id="streams" className="py-20 px-4 bg-gradient-to-b from-black via-pink-950/20 to-black">
@@ -56,7 +62,7 @@ export function StreamsSection() {
             <h2 className="text-5xl text-white">Streams en Direct</h2>
           </div>
           <p className="text-xl text-gray-400">
-            Regardez vos VTubers préférés en action sur Virtualia
+            Regardez nos participants en action sur Virtualia et suivez leurs aventures !
           </p>
         </div>
 
@@ -64,9 +70,10 @@ export function StreamsSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {liveStreams.map((stream) => (
               <Paper 
-                key={stream.id} 
+                key={stream.id}
                 elevation={0}
-                className="bg-gray-900/50 border border-pink-500/30 overflow-hidden hover:border-pink-400/50 transition-all rounded-lg"
+                className="bg-purple-950/30 border border-pink-500/30 overflow-hidden hover:border-pink-400/50 transition-all rounded-lg"
+                sx={{ backgroundColor: 'transparent' }}
               >
                 {/* Video Placeholder */}
                 <div className="relative aspect-video bg-gradient-to-br from-purple-900/50 to-pink-900/50 flex items-center justify-center">
@@ -139,8 +146,29 @@ export function StreamsSection() {
         {liveStreams.length > 0 && (
           <div className="mt-8 text-center">
             <p className="text-gray-400">
-              💡 Astuce : Ouvrez plusieurs streams simultanément pour une expérience multistream complète !
+              💡 Astuce : Cliquez sur ce bouton pour voir plusieurs streams simultanément pour une expérience multistream complète !
             </p>
+              <Button
+                  variant="outlined"
+                  color="inherit"
+                  disableElevation
+                  onClick={() => window.open(multistreamUrl, '_blank', 'noopener,noreferrer')}
+                  sx={{
+                      mt: 2,
+                      color: '#ffffff',
+                      borderColor: '#db2777', // pink-600
+                      px: 2,
+                      py: 1,
+                      borderRadius: '2rem',
+                      transitionProperty: 'background-color, color, border-color',
+                      transitionDuration: '150ms',
+                      '&:hover': { backgroundColor: '#ec4899' } // pink-500
+                  }}
+                  aria-label="Ouvrir Multistream"
+              >
+                  <DynamicFeedIcon/> &nbsp;
+                  Voir en Multistream
+              </Button>
           </div>
         )}
       </div>
