@@ -116,9 +116,9 @@
   {
     "id": "12",
     "name": "KamiCie",
-    "minecraftPseudo": "KamiCie",
-    "role": "Participant",
-    "socialMedia": { "twitch": "KamiCie" },
+    "minecraftPseudo": "Meadras",
+    "role": "Modo",
+    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" },
     "status": "offline"
   },
   {
@@ -131,34 +131,47 @@
   },
   {
     "id": "14",
-    "name": "babyhawk_vt",
-    "minecraftPseudo": "babyhawk_vt",
+    "name": "Babyhawk_vt",
+    "minecraftPseudo": "BabyHawk_",
     "role": "Participant",
-    "socialMedia": { "twitch": "babyhawk_vt" },
+    "socialMedia": {
+      "twitch": "babyhawk_vt",
+      "youtube": "@VT_BabyHawk1",
+      "tiktok": "@babyhawk_vt"
+    },
     "status": "offline"
   },
   {
     "id": "15",
-    "name": "fulbi",
-    "minecraftPseudo": "fulbi",
+    "name": "Fulbi",
+    "minecraftPseudo": "fulbi1",
     "role": "Participant",
-    "socialMedia": { "twitch": "fulbi" },
+    "socialMedia": {
+      "twitch": "fulbii",
+        "twitter": "fulbi6",
+        "youtube": "@fulbi5454",
+        "tiktok": "@fulbii"
+    },
     "status": "offline"
   },
   {
     "id": "16",
     "name": "yuutoushiro",
-    "minecraftPseudo": "yuutoushiro",
+    "minecraftPseudo": "yuutooushiro",
     "role": "Participant",
-    "socialMedia": { "twitch": "yuutoushiro" },
+    "socialMedia": {
+      "twitch": "yuutooushiro",
+        "twitter": "yuutooushiro",
+        "youtube": "@yuutooushiro"
+    },
     "status": "offline"
   },
   {
     "id": "17",
     "name": "Yaochy_0",
-    "minecraftPseudo": "Yaochy_0",
+    "minecraftPseudo": "Yaochy",
     "role": "Participant",
-    "socialMedia": { "twitch": "Yaochy_0" },
+    "socialMedia": { "twitch": "yaochy_0" },
     "status": "offline"
   }
  ]

@@ -1,7 +1,8 @@
 import { Users, Globe } from 'lucide-react';
 import { AiOutlineYoutube, AiFillTwitch, AiFillTwitterCircle, AiOutlineTikTok   } from "react-icons/ai";
 import { Paper, Chip } from '@mui/material';
-import { MinecraftSkin3D } from './MinecraftSkin3D';
+// import { MinecraftSkin3D } from './MinecraftSkin3D';
+import StarlightPoseSkin from './StarlightPoseSkin';
 import {ParticipantInterface} from '../Interface/ParticipantInterface';
 import participantsList from '../data/participants.json';
 import React from "react";
@@ -42,20 +43,24 @@ export function ParticipantsSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {participants.map((participant) => (
-            <Paper 
+          {participants.map((participant, idx) => (
+            <Paper
               key={participant.id}
               elevation={0}
               className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 p-6 hover:border-purple-400/50 transition-all hover:scale-105 rounded-lg"
               sx={{ backgroundColor: 'transparent' }}>
-              {/* 3D Skin & Status */}
+              {/* Skin via Starlight + Status */}
               <div className="flex flex-col items-center mb-4">
                 <div className="relative">
-                  <MinecraftSkin3D 
+                  <StarlightPoseSkin
                     username={participant.minecraftPseudo}
                     width={200}
                     height={250}
                     className="mx-auto"
+                    initialPoseIndex={idx}
+                    // Active l'usage auto des skins publics hébergés en prod HTTPS
+                    preferLocalSkin={true}
+                    localPathPattern="/skin/{username}.png"
                   />
                   {/* Status Indicator */}
                   <div className={`absolute bottom-2 right-2 w-6 h-6 rounded-full border-2 border-gray-900 ${
