@@ -35,8 +35,7 @@ const POSE_TYPES = [
     "lunging",
     "dungeons",
     "kicking",
-    "archer",
-
+    "archer"
 ];
 
 function canUseExternal(url?: string): boolean {

@@ -49,14 +49,14 @@
   },
   {
     "id": "5",
-    "name": "dollcheshire",
+    "name": "DollCheshire",
     "minecraftPseudo": "dollcheshire",
     "role": "Guerrier",
     "socialMedia": {
       "twitch": "dollcheshire",
       "twitter": "@ChesCatWonder",
       "youtube": "@dollcheshire",
-        "tiktok": "@dollcheshire"
+      "tiktok": "@dollcheshire"
     },
     "status": "offline"
   },
@@ -83,34 +83,47 @@
     "role": "Participant",
     "socialMedia": {
       "twitch": "eris_here",
-    "twitter": "@Eris_le_fou",
-    "youtube": "@Eris_here",
-    "tiktok": "@eris_is_here"
+      "twitter": "@Eris_le_fou",
+      "youtube": "@Eris_here",
+      "tiktok": "@eris_is_here"
     },
     "status": "offline"
   },
   {
     "id": "9",
     "name": "Tsukayuza",
-    "minecraftPseudo": "Tsukayuza",
+    "minecraftPseudo": "tsukayu",
     "role": "Participant",
-    "socialMedia": { "twitch": "Tsukayuza" },
+    "socialMedia": {
+      "twitch": "tsukayuza",
+      "youtube": "@Tsukayuza",
+      "tiktok": "@tsukayuza"
+    },
     "status": "offline"
   },
   {
     "id": "10",
     "name": "Hellzetsu_God",
-    "minecraftPseudo": "Hellzetsu_God",
+    "minecraftPseudo": "Hellzetsu",
     "role": "Participant",
-    "socialMedia": { "twitch": "Hellzetsu_God" },
+    "socialMedia": {
+      "twitch": "hellzetsu_god",
+      "twitter": "Hellzetsu1",
+      "youtube": "@Hellzetsu_Vtuber",
+      "tiktok": "@Hellzetsu_God"
+    },
     "status": "offline"
   },
   {
     "id": "11",
     "name": "Hisoka_VT",
-    "minecraftPseudo": "Hisoka_VT",
+    "minecraftPseudo": "Hisoka_lpb",
     "role": "Participant",
-    "socialMedia": { "twitch": "Hisoka_VT" },
+    "socialMedia": {
+      "twitch": "Hisoka_VT",
+      "twitter":"Hisoka_VTFR",
+      "tiktok": "@askastas_vtfr"
+    },
     "status": "offline"
   },
   {
@@ -124,9 +137,11 @@
   {
     "id": "13",
     "name": "toya_yu",
-    "minecraftPseudo": "toya_yu",
+    "minecraftPseudo": "Setsuko_aka",
     "role": "Participant",
-    "socialMedia": { "twitch": "toya_yu" },
+    "socialMedia": { "twitch": "toya_yu",
+      "twitter": "luv_yukia"
+    },
     "status": "offline"
   },
   {
@@ -148,9 +163,9 @@
     "role": "Participant",
     "socialMedia": {
       "twitch": "fulbii",
-        "twitter": "fulbi6",
-        "youtube": "@fulbi5454",
-        "tiktok": "@fulbii"
+      "twitter": "fulbi6",
+      "youtube": "@fulbi5454",
+      "tiktok": "@fulbii"
     },
     "status": "offline"
   },
@@ -161,8 +176,8 @@
     "role": "Participant",
     "socialMedia": {
       "twitch": "yuutooushiro",
-        "twitter": "yuutooushiro",
-        "youtube": "@yuutooushiro"
+      "twitter": "yuutooushiro",
+      "youtube": "@yuutooushiro"
     },
     "status": "offline"
   },
@@ -173,5 +188,39 @@
     "role": "Participant",
     "socialMedia": { "twitch": "yaochy_0" },
     "status": "offline"
+  },
+  {
+    "id": "18",
+    "name": "Suichi_saihara",
+    "minecraftPseudo": "shuichi_saihara",
+    "role": "Participant",
+    "socialMedia": {
+    },
+    "status": "offline"
+  },
+  {
+      "id": "19",
+      "name": "Seba_Gaming",
+      "minecraftPseudo": "Seba_Gaming",
+      "role": "Participant",
+      "socialMedia": {
+      "twitch": "seba__gaming",
+      "twitter": "@KillersSeba",
+      "youtube": "@sebagaming5913",
+      "tiktok": "@sebagaming_vt"
+      },
+      "status": "offline"
+  },
+  {
+    "id": "20",
+    "name": "Oslo",
+    "minecraftPseudo": "olso_squeletton",
+    "role": "Participant",
+    "socialMedia": {
+      "twitch": "olso_squeletton",
+      "twitter": "@olso_vtuberFR",
+      "tiktok": "@olso_eternal"
+    },
+    "status": "offline"
   }
- ]
+]

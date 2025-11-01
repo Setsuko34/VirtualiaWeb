@@ -1,5 +1,10 @@
 import { Heart, Sparkles } from 'lucide-react';
+import { Link } from '@mui/material';
+import React from "react";
 
+const handleSetsukoClick = () => {
+  window.open('https://twitter.com/Setsuko_Aka', '_blank');
+}
 export function Footer() {
   return (
     <footer className="bg-black border-t border-purple-500/30 py-8 px-4">
@@ -16,7 +21,7 @@ export function Footer() {
           </p>
           
           <p className="text-gray-500 text-sm flex items-center justify-center gap-2">
-            Fait par Setsuko_Aka avec le <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pour Virtualia
+            Fait par <Link onClick={handleSetsukoClick} >Setsuko_Aka </Link> avec le <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pour Virtualia
           </p>
           
           <p className="text-gray-600 text-xs mt-4">
