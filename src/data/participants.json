@@ -137,10 +137,12 @@
   {
     "id": "13",
     "name": "toya_yu",
-    "minecraftPseudo": "Setsuko_aka",
+    "minecraftPseudo": "Yukia45",
     "role": "Participant",
-    "socialMedia": { "twitch": "toya_yu",
-      "twitter": "luv_yukia"
+    "socialMedia": {
+      "twitch": "toya_yu",
+      "twitter": "luv_yukia",
+      "tiktok": "@tooya_vt"
     },
     "status": "offline"
   },
