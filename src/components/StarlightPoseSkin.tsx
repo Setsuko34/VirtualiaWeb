@@ -15,12 +15,6 @@ export type StarlightPoseSkinProps = {
   initialPoseIndex?: number;
   // Forcer une pose précise (sinon on essaie une liste de poses prédéfinies)
   poseType?: string;
-  // URL absolue d'un skin (HTTPS public) à utiliser côté Starlight (prioritaire)
-  skinAbsoluteUrl?: string; // ex: https://dev.vtvirtualia.fr/skin/<name>.png
-  // Si true, tente automatiquement d'utiliser un skin local sous /public selon localPathPattern (prod HTTPS uniquement)
-  preferLocalSkin?: boolean;
-  // Pattern du chemin local (remplace {username})
-  localPathPattern?: string; // ex: "/skin/{username}.png"
 };
 
 const BASE = "https://starlightskins.lunareclipse.studio";
@@ -38,22 +32,7 @@ const POSE_TYPES = [
     "archer"
 ];
 
-function canUseExternal(url?: string): boolean {
-  if (!url) return false;
-  try {
-    const u = new URL(url);
-    if (u.hostname === "localhost" || u.hostname === "127.0.0.1") return false;
-    return u.protocol === "https:";
-  } catch {
-    return false;
-  }
-}
-
 function buildUrl(type: string, username: string, skinAbsoluteUrl?: string): string {
-  if (canUseExternal(skinAbsoluteUrl)) {
-    const encoded = encodeURIComponent(skinAbsoluteUrl as string);
-    return `${BASE}/render/${encodeURIComponent(type)}/url/${encoded}/${CROP}`;
-  }
   return `${BASE}/render/${encodeURIComponent(type)}/${encodeURIComponent(username)}/${CROP}`;
 }
 
@@ -63,10 +42,7 @@ export const StarlightPoseSkin: React.FC<StarlightPoseSkinProps> = ({
   height = 250,
   className = "",
   initialPoseIndex = 0,
-  poseType,
-  skinAbsoluteUrl,
-  preferLocalSkin = true,
-  localPathPattern = "/skin/{username}.png",
+  poseType
 }) => {
   const [poseIdx, setPoseIdx] = useState<number>(() => {
     if (poseType) return 0;
@@ -74,54 +50,38 @@ export const StarlightPoseSkin: React.FC<StarlightPoseSkinProps> = ({
   });
   const [errorCount, setErrorCount] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const [finalSrc, setFinalSrc] = useState("");
 
-  const effectivePose = poseType ?? POSE_TYPES[poseIdx];
 
-  // Détermine automatiquement une URL absolue HTTPS vers /skin/{username}.png en prod HTTPS
-  const autoLocalAbsoluteUrl = useMemo(() => {
-    if (skinAbsoluteUrl) return skinAbsoluteUrl; // priorité à la prop explicite
-    if (!preferLocalSkin) return undefined;
-    if (typeof window === "undefined") return undefined;
-    try {
-      const { origin } = window.location;
-      const url = new URL(origin);
-      if (url.protocol !== "https:" || url.hostname === "localhost" || url.hostname === "127.0.0.1") {
-        return undefined;
-      }
-      const path = localPathPattern.replace("{username}", encodeURIComponent(username));
-      return `${origin}${path.startsWith("/") ? "" : "/"}${path}`;
-    } catch {
-      return undefined;
-    }
-  }, [skinAbsoluteUrl, preferLocalSkin, localPathPattern, username]);
+    const effectivePose = poseType ?? POSE_TYPES[poseIdx];
+  const maxAttempts = poseType ? 1 : POSE_TYPES.length;
 
   // Fallback final si toutes les poses échouent
   const fallbackBody = `https://mc-heads.net/body/${encodeURIComponent(username)}.png`;
-  const [finalSrc, setFinalSrc] = useState("");
 
+    // Réinitialise uniquement quand la cible change
+    useEffect(() => {
+        setPoseIdx(poseType ? 0 : Math.abs(initialPoseIndex) % POSE_TYPES.length);
+        setErrorCount(0);
+    }, [username, poseType, initialPoseIndex]);
   // Recalcule la source à chaque changement pertinent
   useEffect(() => {
     setLoaded(false);
-    setErrorCount(0);
-    const next = buildUrl(effectivePose, username, autoLocalAbsoluteUrl);
-    setFinalSrc(next);
-  }, [effectivePose, username, autoLocalAbsoluteUrl]);
+    setFinalSrc(buildUrl(effectivePose, username));
+  }, [effectivePose, username, ]);
 
-  const onError = () => {
-    if (poseType) {
-      setFinalSrc(fallbackBody);
-      setLoaded(true);
-      return;
-    }
-    const nextErr = errorCount + 1;
-    setErrorCount(nextErr);
-    if (nextErr >= POSE_TYPES.length) {
-      setFinalSrc(fallbackBody);
-      setLoaded(true);
-    } else {
-      setPoseIdx((i) => (i + 1) % POSE_TYPES.length);
-    }
-  };
+    const onError = () => {
+        const nextErr = errorCount + 1;
+        setErrorCount(nextErr);
+
+        if (nextErr >= maxAttempts) {
+            setFinalSrc(fallbackBody);
+            return;
+        }
+        if (!poseType) {
+            setPoseIdx((i) => (i + 1) % POSE_TYPES.length);
+        }
+    };
 
   return (
     <div className={`relative ${className}`} style={{ width, height }}>
