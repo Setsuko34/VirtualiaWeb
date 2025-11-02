@@ -1,0 +1,19 @@
+{
+  "name": "Virtualia 2",
+  "short_name": "Virtualia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4c1d95",
+  "icons": [
+    {
+      "src": "/logomini.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/logobig.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]

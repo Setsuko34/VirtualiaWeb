@@ -4,8 +4,11 @@ import { AboutSection } from './components/AboutSection';
 import { StreamsSection } from './components/StreamsSection';
 import { ParticipantsSection } from './components/ParticipantsSection';
 import { Footer } from './components/Footer';
+import {useState} from "react";
+import React from "react";
 
 export default function App() {
+    const [countLiveStreams,setCountLiveStreams] = useState<number>();
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
@@ -15,8 +18,8 @@ export default function App() {
           backgroundImage={'/herosection.jpg'}
         />
         <AboutSection />
-        <StreamsSection />
-        <ParticipantsSection />
+        <StreamsSection setCount = {setCountLiveStreams} />
+        <ParticipantsSection CountLive = {countLiveStreams} />
       </main>
       <Footer />
     </div>

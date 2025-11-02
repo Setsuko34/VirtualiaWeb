@@ -9,8 +9,7 @@
       "twitter": "@VTYukiUwU",
       "youtube": "@Yuki____UwU899",
       "tiktok": "@vtyukiuwu"
-    },
-    "status": "online"
+    }
   },
   {
     "id": "2",
@@ -19,8 +18,7 @@
     "role": "Guerrier",
     "socialMedia": {
       "twitch": "VTMizuhiro"
-    },
-    "status": "online"
+    }
   },
   {
     "id": "3",
@@ -32,8 +30,7 @@
       "twitter": "@setsuko_aka",
       "youtube": "@Setsuko_Aka",
       "website": "setsukoaka.fr"
-    },
-    "status": "online"
+    }
   },
   {
     "id": "4",
@@ -44,8 +41,7 @@
       "twitch": "karoteuh_",
       "youtube": "@Karoteuh_Kuite",
       "tiktok": "@karoteuh_"
-    },
-    "status": "online"
+    }
   },
   {
     "id": "5",
@@ -57,24 +53,21 @@
       "twitter": "@ChesCatWonder",
       "youtube": "@dollcheshire",
       "tiktok": "@dollcheshire"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "6",
     "name": "BaySone",
     "minecraftPseudo": "BaySone",
     "role": "Participant",
-    "socialMedia": { "twitch": "BaySone" },
-    "status": "offline"
+    "socialMedia": { "twitch": "BaySone" }
   },
   {
     "id": "7",
     "name": "Chikahiwo",
-    "minecraftPseudo": "Chikahiwo",
+    "minecraftPseudo": "Chikahiro",
     "role": "Participant",
-    "socialMedia": { "twitch": "Chikahiwo" },
-    "status": "offline"
+    "socialMedia": { "twitch": "Chikahiwo" }
   },
   {
     "id": "8",
@@ -86,8 +79,7 @@
       "twitter": "@Eris_le_fou",
       "youtube": "@Eris_here",
       "tiktok": "@eris_is_here"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "9",
@@ -98,8 +90,7 @@
       "twitch": "tsukayuza",
       "youtube": "@Tsukayuza",
       "tiktok": "@tsukayuza"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "10",
@@ -111,8 +102,7 @@
       "twitter": "Hellzetsu1",
       "youtube": "@Hellzetsu_Vtuber",
       "tiktok": "@Hellzetsu_God"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "11",
@@ -123,16 +113,14 @@
       "twitch": "Hisoka_VT",
       "twitter":"Hisoka_VTFR",
       "tiktok": "@askastas_vtfr"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "12",
     "name": "KamiCie",
     "minecraftPseudo": "Meadras",
     "role": "Modo",
-    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" },
-    "status": "offline"
+    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" }
   },
   {
     "id": "13",
@@ -143,8 +131,7 @@
       "twitch": "toya_yu",
       "twitter": "luv_yukia",
       "tiktok": "@tooya_vt"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "14",
@@ -155,8 +142,7 @@
       "twitch": "babyhawk_vt",
       "youtube": "@VT_BabyHawk1",
       "tiktok": "@babyhawk_vt"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "15",
@@ -168,8 +154,7 @@
       "twitter": "fulbi6",
       "youtube": "@fulbi5454",
       "tiktok": "@fulbii"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "16",
@@ -180,16 +165,14 @@
       "twitch": "yuutooushiro",
       "twitter": "yuutooushiro",
       "youtube": "@yuutooushiro"
-    },
-    "status": "offline"
+    }
   },
   {
     "id": "17",
     "name": "Yaochy_0",
     "minecraftPseudo": "Yaochy",
     "role": "Participant",
-    "socialMedia": { "twitch": "yaochy_0" },
-    "status": "offline"
+    "socialMedia": { "twitch": "yaochy_0" }
   },
   {
     "id": "18",
@@ -197,8 +180,7 @@
     "minecraftPseudo": "shuichi_saihara",
     "role": "Participant",
     "socialMedia": {
-    },
-    "status": "offline"
+    }
   },
   {
       "id": "19",
@@ -222,7 +204,6 @@
       "twitch": "olso_squeletton",
       "twitter": "@olso_vtuberFR",
       "tiktok": "@olso_eternal"
-    },
-    "status": "offline"
+    }
   }
 ]

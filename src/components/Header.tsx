@@ -1,4 +1,5 @@
 import { Swords, Users, Tv, Home } from 'lucide-react';
+import React from "react";
 
 export function Header() {
   const scrollToSection = (id: string) => {
