@@ -1,5 +1,6 @@
 import { Server, Zap, Globe, Heart } from 'lucide-react';
 import { Paper } from '@mui/material';
+import React from "react";
 
 export function AboutSection() {
   const features = [
