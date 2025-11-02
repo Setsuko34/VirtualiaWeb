@@ -3,7 +3,7 @@
     "id": "1",
     "name": "VTYukiUwU",
     "minecraftPseudo": "VTYukiUwU",
-    "role": "Mage",
+    "role": "Organisatrice/Participant",
     "socialMedia": {
       "twitch": "vtyukiuwu",
       "twitter": "@VTYukiUwU",
@@ -15,16 +15,23 @@
     "id": "2",
     "name": "VTMizuhiro",
     "minecraftPseudo": "Mizuhir0_",
-    "role": "Guerrier",
+    "role": "Moderateur",
     "socialMedia": {
       "twitch": "VTMizuhiro"
     }
   },
   {
     "id": "3",
+    "name": "KamiCie",
+    "minecraftPseudo": "Meadras",
+    "role": "Moderateur",
+    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" }
+  },
+  {
+    "id": "4",
     "name": "Setsuko_Aka",
     "minecraftPseudo": "Setsuko_Aka",
-    "role": "Alchimiste",
+    "role": "Developpeur/Participant",
     "socialMedia": {
       "twitch": "setsuko_aka",
       "twitter": "@setsuko_aka",
@@ -33,7 +40,7 @@
     }
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "Karoteuh_",
     "minecraftPseudo": "Karoteuh",
     "role": "Alchimiste",
@@ -44,7 +51,7 @@
     }
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "DollCheshire",
     "minecraftPseudo": "dollcheshire",
     "role": "Guerrier",
@@ -56,21 +63,21 @@
     }
   },
   {
-    "id": "6",
+    "id": "7",
     "name": "BaySone",
     "minecraftPseudo": "BaySone",
     "role": "Participant",
     "socialMedia": { "twitch": "BaySone" }
   },
   {
-    "id": "7",
+    "id": "8",
     "name": "Chikahiwo",
     "minecraftPseudo": "Chikahiro",
     "role": "Participant",
     "socialMedia": { "twitch": "Chikahiwo" }
   },
   {
-    "id": "8",
+    "id": "9",
     "name": "eris_here",
     "minecraftPseudo": "Just_Eris",
     "role": "Participant",
@@ -82,7 +89,7 @@
     }
   },
   {
-    "id": "9",
+    "id": "10",
     "name": "Tsukayuza",
     "minecraftPseudo": "tsukayu",
     "role": "Participant",
@@ -93,7 +100,7 @@
     }
   },
   {
-    "id": "10",
+    "id": "11",
     "name": "Hellzetsu_God",
     "minecraftPseudo": "Hellzetsu",
     "role": "Participant",
@@ -105,7 +112,7 @@
     }
   },
   {
-    "id": "11",
+    "id": "12",
     "name": "Hisoka_VT",
     "minecraftPseudo": "Hisoka_lpb",
     "role": "Participant",
@@ -114,13 +121,6 @@
       "twitter":"Hisoka_VTFR",
       "tiktok": "@askastas_vtfr"
     }
-  },
-  {
-    "id": "12",
-    "name": "KamiCie",
-    "minecraftPseudo": "Meadras",
-    "role": "Modo",
-    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" }
   },
   {
     "id": "13",
