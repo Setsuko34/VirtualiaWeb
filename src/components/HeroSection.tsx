@@ -49,7 +49,7 @@ export function HeroSection({ backgroundImage }: HeroSectionProps) {
           <div className="mt-4 flex justify-center">
               <button
                   className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors flex items-center justify-center gap-2"
-                  onClick={() => document.getElementById('participants')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => window.open('https://rpg.prominence.wiki/hasturian-era/b/66ACEBE7-937C-4075-A14C-0199049E38D6/Conjunctivius-(Recommended-Level-30', '_blank')}
               >
                   <FileBox className="w-5 h-5" />
                   Le modpack
