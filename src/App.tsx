@@ -6,10 +6,12 @@ import { ParticipantsSection } from './components/ParticipantsSection';
 import { Footer } from './components/Footer';
 import {useState} from "react";
 import React from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
     const [countLiveStreams,setCountLiveStreams] = useState<number>();
   return (
+
     <div className="min-h-screen bg-black text-white">
       <Header />
       <main>
@@ -20,6 +22,7 @@ export default function App() {
         <AboutSection />
         <StreamsSection setCount = {setCountLiveStreams} />
         <ParticipantsSection CountLive = {countLiveStreams} />
+          <Analytics/>
       </main>
       <Footer />
     </div>
