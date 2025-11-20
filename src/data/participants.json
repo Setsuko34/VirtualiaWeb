@@ -208,8 +208,20 @@
   },
   {
     "id": "21",
+    "name": "Somidream",
+    "minecraftPseudo": "Somidream",
+    "role": "Participant",
+    "socialMedia": {
+      "twitch": "somidream",
+      "twitter": "@SomiDream_",
+      "youtube": "@SomiDream_Replay",
+      "tiktok": "@somidream_"
+    }
+  },
+  {
+    "id": "22",
     "name": "Yuji",
-    "minecraftPseudo": "J0J0_bskt",
+    "minecraftPseudo": "Yujii_itadori",
     "role": "Participant",
     "socialMedia": {
     }
