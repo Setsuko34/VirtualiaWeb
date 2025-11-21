@@ -135,17 +135,6 @@
   },
   {
     "id": "14",
-    "name": "Babyhawk_vt",
-    "minecraftPseudo": "BabyHawk_",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "babyhawk_vt",
-      "youtube": "@VT_BabyHawk1",
-      "tiktok": "@babyhawk_vt"
-    }
-  },
-  {
-    "id": "15",
     "name": "Fulbi",
     "minecraftPseudo": "fulbi1",
     "role": "Participant",
@@ -157,7 +146,7 @@
     }
   },
   {
-    "id": "16",
+    "id": "15",
     "name": "yuutoushiro",
     "minecraftPseudo": "yuutooushiro",
     "role": "Participant",
@@ -168,14 +157,14 @@
     }
   },
   {
-    "id": "17",
+    "id": "16",
     "name": "Yaochy_0",
     "minecraftPseudo": "Yaochy",
     "role": "Participant",
     "socialMedia": { "twitch": "yaochy_0" }
   },
   {
-    "id": "18",
+    "id": "17",
     "name": "Shuichi_saihara",
     "minecraftPseudo": "shuichi_saihara",
     "role": "Participant",
@@ -183,7 +172,7 @@
     }
   },
   {
-      "id": "19",
+      "id": "18",
       "name": "Seba_Gaming",
       "minecraftPseudo": "Seba_Gaming",
       "role": "Participant",
@@ -196,7 +185,7 @@
       "status": "offline"
   },
   {
-    "id": "20",
+    "id": "19",
     "name": "Olso",
     "minecraftPseudo": "olso_squeletton",
     "role": "Participant",
@@ -207,7 +196,7 @@
     }
   },
   {
-    "id": "21",
+    "id": "20",
     "name": "Somidream",
     "minecraftPseudo": "Somidream",
     "role": "Participant",
@@ -219,7 +208,7 @@
     }
   },
   {
-    "id": "22",
+    "id": "21",
     "name": "Yuji",
     "minecraftPseudo": "Yujii_itadori",
     "role": "Participant",
