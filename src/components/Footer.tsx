@@ -1,33 +1,32 @@
-import { Heart, Sparkles } from 'lucide-react';
-import { Link } from '@mui/material';
 import React from "react";
+import { C, FONT } from '../theme';
 
-const handleSetsukoClick = () => {
-  window.open('https://twitter.com/Setsuko_Aka', '_blank');
-}
-export function Footer() {
+export function Footer({ onOpenMap }: { onOpenMap: () => void }) {
   return (
-    <footer className="bg-black border-t border-purple-500/30 py-8 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Sparkles className="w-6 h-6 text-purple-400" />
-            <h3 className="text-2xl text-white">Virtualia</h3>
-            <Sparkles className="w-6 h-6 text-pink-400" />
+    <footer style={{ background: `linear-gradient(${C.woodBar2}, ${C.woodDark})`, color: '#e7dabb', padding: '54px 20px 30px', borderTop: '6px solid #2e1a0e' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 30, justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <div style={{ maxWidth: 340 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+            <img src="/logo_virtualia.png" width={42} height={42} alt="Virtualia" style={{ imageRendering: 'pixelated' }} />
+            <span style={{ fontFamily: FONT.pixel, fontSize: 26, color: C.cream, textShadow: '2px 2px 0 #2e1a0e' }}>VIRTUALIA</span>
           </div>
-          
-          <p className="text-gray-400 mb-4">
-            Serveur Minecraft VTuber - Saison 2
-          </p>
-          
-          <p className="text-gray-500 text-sm flex items-center justify-center gap-2">
-            Fait par <Link onClick={handleSetsukoClick} >Setsuko_Aka </Link> avec le <Heart className="w-4 h-4 text-red-500 fill-red-500" /> pour Virtualia
-          </p>
-          
-          <p className="text-gray-600 text-xs mt-4">
-            © 2025 Virtualia. Serveur privé - Prominence 2 Modpack
-          </p>
+          <p style={{ fontSize: 14, color: '#cbbb95', lineHeight: 1.6, margin: 0 }}>Le serveur Minecraft événementiel des VTubers francophones · Saison 3 · Modpack Dragonfyre.</p>
         </div>
+        <div>
+          <h4 style={{ fontFamily: FONT.pixel, fontSize: 20, margin: '0 0 12px', color: C.cream }}>Archives</h4>
+          <button onClick={onOpenMap} className="v-btn" style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontFamily: FONT.pixel, fontSize: 16, color: '#fff', padding: '10px 16px', background: C.grass, border: `3px solid ${C.grassBorder}`, borderRadius: 4, boxShadow: 'inset -2px -2px 0 rgba(0,0,0,.25), inset 2px 2px 0 rgba(255,255,255,.3)' }}>⬇ Télécharger les anciennes maps</button>
+        </div>
+        <div>
+          <h4 style={{ fontFamily: FONT.pixel, fontSize: 20, margin: '0 0 12px', color: C.cream }}>Communauté</h4>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {/* TODO: remplacer # par le vrai lien Discord */}
+            <a href="#" style={{ fontSize: 15, color: '#cbbb95', textDecoration: 'none' }}>💬 Discord</a>
+            <a href="https://twitch.tv/vtyukiuwu" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: '#cbbb95', textDecoration: 'none' }}>🟣 Twitch · VTYukiUwU</a>
+          </div>
+        </div>
+      </div>
+      <div style={{ maxWidth: 1100, margin: '34px auto 0', paddingTop: 20, borderTop: '2px solid rgba(255,255,255,.12)', textAlign: 'center', fontSize: 13, color: '#b3a17e' }}>
+        Organisation : VTYukiUwU · Design &amp; Dev : Setsuko_Aka — © Virtualia 2026
       </div>
     </footer>
   );

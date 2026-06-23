@@ -1,71 +1,23 @@
-// src/components/OldMapModal.tsx
-import React from 'react';
-import { Modal, Box, Typography, Link } from '@mui/material';
-import { Download } from 'lucide-react';
+import React from "react";
+import { C, FONT } from '../theme';
 
-interface OldMapModalProps {
-    openDownload: boolean;
-    setOpenDownload: React.Dispatch<React.SetStateAction<boolean>>;
-}
+interface Props { open: boolean; onClose: () => void; }
 
-export default function OldMapModal({ openDownload, setOpenDownload }: OldMapModalProps) {
-    return (
-        <Modal
-            open={openDownload}
-            onClose={() => setOpenDownload(false)}
-            aria-labelledby="download-map-s1-title"
-            BackdropProps={{
-                sx: { backgroundColor: 'rgba(0,0,0,0.7)' }
-            }}
-        >
-            <Box
-                sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    bgcolor: 'rgba(12,12,16,0.95)', // fond sombre
-                    color: '#F8FAFC', // texte clair
-                    borderRadius: 2,
-                    border: '1px solid rgba(124,58,237,0.28)', // bordure violette translucide
-                    boxShadow: 24,
-                    p: 4,
-                    width: 360,
-                }}
-            >
-                <Typography id="download-map-s1-title" variant="h6" component="h2" sx={{ mb: 1 }}>
-                    Télécharger l'ancienne map
-                </Typography>
-                <Link
-                    href="https://drive.google.com/file/d/1wBcGYWbpz99oU99GB7YlmBs91TOegZS8/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
-                    sx={{
-                        fontSize: 16,
-                        display: 'flex',
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        gap: 1.5,
-                        width: '100%',
-                        marginBottom: 2,
-                        color: 'rgba(203,213,225,1)', // légèrement clair
-                        textDecoration: 'none',
-                    }}
-                >
-                    <Download color="#A78BFA" size={18} />
-                    <span style={{ color: '#EDE9FE', fontWeight: 500 }}>Saison 1</span>
-                </Link>
-
-                <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
-                    <button
-                        onClick={() => setOpenDownload(false)}
-                        className="px-3 py-2 rounded-md text-sm bg-gray-700 hover:bg-gray-600 text-gray-100"
-                    >
-                        Annuler
-                    </button>
-                </div>
-            </Box>
-        </Modal>
-    );
+export function OldMapModal({ open, onClose }: Props) {
+  if (!open) return null;
+  return (
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, zIndex: 100, background: 'rgba(0,0,0,.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 20 }}>
+      <div onClick={(e) => e.stopPropagation()} style={{ background: C.parchmentLight, border: `5px solid ${C.woodDark}`, borderRadius: 8, padding: 28, width: 380, maxWidth: '100%', boxShadow: 'inset -5px -5px 0 rgba(58,42,24,.15), inset 5px 5px 0 rgba(255,255,255,.6), 0 10px 0 rgba(0,0,0,.4)' }}>
+        <h3 style={{ fontFamily: FONT.pixel, fontSize: 26, margin: '0 0 16px', color: C.ink }}>⬇ Anciennes maps</h3>
+        <a href="https://drive.google.com/file/d/1wBcGYWbpz99oU99GB7YlmBs91TOegZS8/view" target="_blank" rel="noopener noreferrer"
+          style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: FONT.pixel, fontSize: 18, color: C.ink, textDecoration: 'none', padding: 14, background: C.parchment, border: `3px solid ${C.wood}`, borderRadius: 5, marginBottom: 12 }}>
+          📦 Saison 1
+        </a>
+        <p style={{ fontSize: 13, color: '#8a7350', margin: '0 0 18px' }}>Les maps des saisons suivantes seront ajoutées ici.</p>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <button onClick={onClose} className="v-btn" style={{ cursor: 'pointer', fontFamily: FONT.pixel, fontSize: 16, color: '#fff', padding: '9px 18px', background: '#9a4a3a', border: '3px solid #5e2418', borderRadius: 4, boxShadow: 'inset -2px -2px 0 rgba(0,0,0,.25), inset 2px 2px 0 rgba(255,255,255,.25)' }}>Fermer</button>
+        </div>
+      </div>
+    </div>
+  );
 }

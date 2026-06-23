@@ -3,7 +3,8 @@ node_modules/
 
 # Sorties de build
 dist/
-
+build/
+docs/superpowers/
 # Variables d'environnement (conservez un fichier '.env.example')
 .env
 .env.local
