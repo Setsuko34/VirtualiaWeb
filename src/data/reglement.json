@@ -1,0 +1,47 @@
+[
+  {
+    "n": "01",
+    "title": "Respect avant tout",
+    "desc": "Aucun harcèlement, propos haineux ou toxicité. On est là pour s'amuser ensemble."
+  },
+  {
+    "n": "02",
+    "title": "Pas de grief/vol",
+    "desc": "Ne détruis ni ne vole les constructions ou ressources des autres joueurs. On aura aucune tolérance."
+  },
+  {
+    "n": "03",
+    "title": "Pas de spawnkill",
+    "desc": "Ne bloque pas les spawns des autres joueurs. Laisse-les jouer et respawn tranquillement."
+  },
+  {
+    "n": "04",
+    "title": "Esprit collaboratif",
+    "desc": "Le monde est partagé : entraidez-vous et construisez ensemble."
+  },
+  {
+    "n": "05",
+    "title": "Contenu en stream",
+    "desc": "Pense à tes viewers : reste fair-play et bienveillant à l'antenne."
+  },
+  {
+    "n": "06",
+    "title": "Écoute les modos",
+    "desc": "Les modérateurs sont là pour t'aider. Suis leurs consignes."
+  },
+  {
+    "n": "07",
+    "title": "En cas de problèmes",
+    "desc": "Si il y'a des problèmes vis à vis de certains mob , nous vous indiquons de ne pas les toucher et de prévenir la modération"
+  },
+  {
+    "n": "08",
+    "title": "Les téléportations",
+    "desc": "Les RTP sont interdits et les TP maps aussi ( click droit sur la map et ce tp)"
+  },
+  {
+    "n": "09",
+    "title": "Claims",
+    "desc": "Pas de claim de villages ou de structures contenant des coffres généré ou structures moddées"
+  }
+]
