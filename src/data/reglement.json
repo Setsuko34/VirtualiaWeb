@@ -1,0 +1,32 @@
+[
+  {
+    "n": "01",
+    "title": "Respect avant tout",
+    "desc": "Aucun harcèlement, propos haineux ou toxicité. On est là pour s'amuser ensemble."
+  },
+  {
+    "n": "02",
+    "title": "Pas de grief",
+    "desc": "Ne détruis ni ne vole les constructions des autres joueurs."
+  },
+  {
+    "n": "03",
+    "title": "Jeu loyal",
+    "desc": "Interdiction des hacks, x-ray, duplication de bugs et exploits."
+  },
+  {
+    "n": "04",
+    "title": "Esprit collaboratif",
+    "desc": "Le monde est partagé : entraidez-vous et construisez ensemble."
+  },
+  {
+    "n": "05",
+    "title": "Contenu en stream",
+    "desc": "Pense à tes viewers : reste fair-play et bienveillant à l'antenne."
+  },
+  {
+    "n": "06",
+    "title": "Écoute les modos",
+    "desc": "Les modérateurs sont là pour t'aider. Suis leurs consignes."
+  }
+]
