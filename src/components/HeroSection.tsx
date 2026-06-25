@@ -63,7 +63,8 @@ const cloud = (top: number, w: number, h: number, op: number, dur: number, delay
   boxShadow: shadow, animation: `v-drift ${dur}s linear infinite`, animationDelay: `${delay}s`,
 });
 
-const floatBlock = (s: CSSProperties): CSSProperties => ({ position: 'absolute', imageRendering: 'pixelated', ...s });
+
+// const floatBlock = (s: CSSProperties): CSSProperties => ({ position: 'absolute', imageRendering: 'pixelated', ...s });
 
 export function HeroSection({ ip, streams, loading, videoSrc = '/spawn.mp4' }: Props) {
   const featured = pickFeatured(streams);
@@ -91,10 +92,10 @@ export function HeroSection({ ip, streams, loading, videoSrc = '/spawn.mp4' }: P
       <div style={cloud(180, 120, 38, 0.8, 90, -30, '30px 16px 0 -6px #fff,-30px 16px 0 -6px #fff')} />
       <div style={cloud(130, 200, 54, 0.7, 120, -70, '50px 22px 0 -8px #fff,-50px 22px 0 -8px #fff')} />
 
-      {/* blocs flottants */}
-      <div style={floatBlock({ top: '24%', left: '11%', width: 64, height: 64, background: C.grass, border: `4px solid ${C.woodDark}`, boxShadow: 'inset 0 14px 0 #8ec45a, inset 0 -10px 0 rgba(0,0,0,.2)', animation: 'v-bob 7s ease-in-out infinite' })} />
-      <div style={floatBlock({ top: '42%', right: '13%', width: 58, height: 58, background: '#5fd3d6', border: '4px solid #1f5c63', boxShadow: 'inset -6px -6px 0 rgba(0,0,0,.2), inset 6px 6px 0 rgba(255,255,255,.4)', animation: 'v-bob2 9s ease-in-out infinite' })} />
-      <div style={floatBlock({ top: '60%', left: '16%', width: 48, height: 48, background: '#caa15a', border: '4px solid #5e3f1c', boxShadow: 'inset -5px -5px 0 rgba(0,0,0,.22), inset 5px 5px 0 rgba(255,255,255,.3)', animation: 'v-bob 8s ease-in-out infinite', animationDelay: '-2s' })} />
+      {/*/!* blocs flottants *!/*/}
+      {/*<div style={floatBlock({ top: '24%', left: '11%', width: 64, height: 64, background: C.grass, border: `4px solid ${C.woodDark}`, boxShadow: 'inset 0 14px 0 #8ec45a, inset 0 -10px 0 rgba(0,0,0,.2)', animation: 'v-bob 7s ease-in-out infinite' })} />*/}
+      {/*<div style={floatBlock({ top: '42%', right: '13%', width: 58, height: 58, background: '#5fd3d6', border: '4px solid #1f5c63', boxShadow: 'inset -6px -6px 0 rgba(0,0,0,.2), inset 6px 6px 0 rgba(255,255,255,.4)', animation: 'v-bob2 9s ease-in-out infinite' })} />*/}
+      {/*<div style={floatBlock({ top: '60%', left: '16%', width: 48, height: 48, background: '#caa15a', border: '4px solid #5e3f1c', boxShadow: 'inset -5px -5px 0 rgba(0,0,0,.22), inset 5px 5px 0 rgba(255,255,255,.3)', animation: 'v-bob 8s ease-in-out infinite', animationDelay: '-2s' })} />*/}
 
       <EmberCanvas />
 
