@@ -1,0 +1,45 @@
+[
+  {
+    "tag": "OPEN",
+    "col": "#76ad44",
+    "when": "Jour J",
+    "title": "Ouverture du serveur",
+    "desc": "Lancement officiel de la Saison 3, tous en stream !"
+  },
+  {
+    "tag": "EVENT",
+    "col": "#a55fd0",
+    "when": "Hebdo",
+    "title": "Soirée événement",
+    "desc": "Mini-jeux, build battles et défis communautaires."
+  },
+  {
+    "tag": "BOSS",
+    "col": "#c2552a",
+    "when": "À venir",
+    "title": "Raid de boss",
+    "desc": "Affrontez un boss Dragonfyre en équipe."
+  },
+  {
+    "tag": "Nether",
+    "col": "#c2552a",
+    "when": "Une semaine après le lancement",
+    "title": "Ouverture du Nether",
+    "desc": "Le Nether est désormais accessible à tous."
+  },
+  {
+    "tag": "L'End",
+    "col": "#7b4ea8",
+    "when": "Deux semaines après le lancement",
+    "title": "Ouverture de l'End",
+    "desc": "L'End est désormais accessible à tous."
+  },
+  {
+    "tag": "STREAM",
+    "col": "#7b4ea8",
+    "when": "Quotidien",
+    "title": "Aventures solo",
+    "desc": "Chaque VTuber avance son histoire en live."
+  }
+
+]

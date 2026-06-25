@@ -1,80 +1,42 @@
-import { Server, Zap, Globe, Heart } from 'lucide-react';
-import { Paper } from '@mui/material';
 import React from "react";
+import { C, FONT, panel } from '../theme';
+import type { CSSProperties } from 'react';
+
+const FEATURES = [
+  { icon: '🐲', bg: '#e0772c', title: 'Dragonfyre', desc: "Cisco's Medieval RPG enrichi de dizaines de mods custom." },
+  { icon: '💜', bg: '#a55fd0', title: '100% VTubers', desc: 'Une communauté exclusive de créateurs VTuber francophones.' },
+  { icon: '⚔️', bg: '#76ad44', title: 'Aventure RPG', desc: 'Classes, magie, donjons, raids et boss légendaires.' },
+  { icon: '🌍', bg: '#5fb6c4', title: 'Monde partagé', desc: 'Explorez, construisez et collaborez dans un univers persistant.' },
+];
+
+const dotted: CSSProperties = {
+  background: '#e7dabb', backgroundImage: 'radial-gradient(rgba(58,42,24,.05) 2px, transparent 2px)', backgroundSize: '22px 22px',
+};
 
 export function AboutSection() {
-  const features = [
-    {
-      icon: Server,
-      title: "Prominence 2",
-      description: "Un modpack RPG avancé avec magie, exploration et technologie"
-    },
-    {
-      icon: Heart,
-      title: "100% VTubers",
-      description: "Une communauté exclusive de créateurs de contenu VTuber"
-    },
-    {
-      icon: Zap,
-      title: "Contenu Unique",
-      description: "Des événements, quêtes et aventures créées spécialement pour la saison 2"
-    },
-    {
-      icon: Globe,
-      title: "Monde Partagé",
-      description: "Explorez, construisez et collaborez dans un univers persistant"
-    }
-  ];
-
   return (
-    <section id="about" className="py-20 px-4 bg-gradient-to-b from-black via-purple-950/20 to-black">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl mb-4 text-white">Bienvenue sur Virtualia</h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Virtualia est un serveur Minecraft privé réunissant les meilleurs VTubers dans une aventure épique 
-            sur le modpack Prominence 2. Plongez dans un monde de magie, de technologie et d'aventures infinies.
-          </p>
+    <section id="about" className="px-5 py-10 md:py-[90px]" style={{ position: 'relative', ...dotted }}>
+      <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: 54 }}>
+          <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 14px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>Bienvenue sur Virtualia</h2>
+          <p style={{ fontSize: 19, color: '#4a3a25', maxWidth: 760, margin: '0 auto', lineHeight: 1.6 }}>Virtualia est un serveur Minecraft privé qui réunit les VTubers francophones dans une grande aventure RPG médiévale. Saison 3 : un monde tout neuf bâti sur <strong>Dragonfyre</strong> et une montagne de mods custom.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {features.map((feature, index) => (
-            <Paper 
-              key={index}
-              elevation={0}
-              className="bg-purple-950/30 border border-purple-500/30 p-6 hover:border-purple-400/50 transition-all hover:scale-105 rounded-lg"
-              sx={{ backgroundColor: 'transparent' }}
-            >
-              <feature.icon className="w-12 h-12 text-purple-400 mb-4" />
-              <h3 className="text-xl mb-2 text-white">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
-            </Paper>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(230px,1fr))', gap: 22, marginBottom: 48 }}>
+          {FEATURES.map((f) => (
+            <div key={f.title} className="v-lift" style={{ padding: 24, ...panel()}}>
+              <div style={{ width: 54, height: 54, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, background: f.bg, border: `3px solid ${C.woodDark}`, borderRadius: 5, boxShadow: 'inset -3px -3px 0 rgba(0,0,0,.2), inset 3px 3px 0 rgba(255,255,255,.3)', marginBottom: 16 }}>{f.icon}</div>
+              <h3 style={{ fontFamily: FONT.pixel, fontSize: 24, margin: '0 0 8px', color: C.ink }}>{f.title}</h3>
+              <p style={{ fontSize: 15, color: C.inkSoft, lineHeight: 1.5, margin: 0 }}>{f.desc}</p>
+            </div>
           ))}
         </div>
 
-        <Paper
-            elevation={0}
-            className="bg-purple-950/30 border border-purple-500/30 p-6 hover:border-purple-400/50 transition-all hover:scale-105 rounded-lg"
-            sx={{ backgroundColor: 'transparent' }}
-           >
-          <h3 className="text-3xl mb-4 text-white">Le Concept de la Saison 2</h3>
-          <div className="space-y-4 text-gray-300">
-            <p>
-              Après le succès retentissant de la première saison, Virtualia revient plus fort que jamais avec 
-              la Saison 2 ! Cette nouvelle aventure propose un monde complètement renouvelé avec de nouveaux 
-              défis, de nouvelles mécaniques et encore plus de possibilités de collaboration.
-            </p>
-            <p>
-              Le modpack Prominence 2 apporte une dimension RPG enrichie avec des systèmes de magie avancés, 
-              des donjons générés procéduralement, et des boss épiques à affronter en équipe. Chaque VTuber 
-              pourra développer son propre style de jeu et contribuer à l'histoire collective du serveur.
-            </p>
-            <p>
-              Rejoignez-nous pour suivre les aventures de vos VTubers préférés, regardez leurs streams en direct, 
-              et découvrez comment ils façonnent ensemble ce monde virtuel unique !
-            </p>
-          </div>
-        </Paper>
+        <div className="px-5 py-6 md:px-10 md:py-[38px]" style={{ ...panel(C.parchmentLight, 5) }}>
+          <h3 style={{ fontFamily: FONT.pixel, fontSize: 30, margin: '0 0 18px', color: C.ink }}>📜 Le Concept de la Saison 3</h3>
+          <p style={{ fontSize: 16, color: '#4a3a25', lineHeight: 1.7, margin: '0 0 14px' }}>Après deux saisons mémorables, Virtualia repart de zéro sur un monde médiéval-fantasy entièrement neuf. Le modpack <strong>Cisco's Medieval RPG · Dragonfyre</strong>, gonflé de mods custom, transforme le serveur en véritable terrain de jeu RPG : classes, magie, donjons, raids et boss légendaires.</p>
+          <p style={{ fontSize: 16, color: '#4a3a25', lineHeight: 1.7, margin: 0 }}>Chaque VTuber forge sa propre légende et participe à l'histoire collective du royaume. Suivez leurs streams, regardez-les bâtir, combattre et collaborer dans cet univers persistant.</p>
+        </div>
       </div>
     </section>
   );

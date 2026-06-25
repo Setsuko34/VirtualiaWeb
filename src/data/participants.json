@@ -1,192 +1,218 @@
 [
   {
-    "id": "1",
     "name": "VTYukiUwU",
-    "minecraftPseudo": "VTYukiUwU",
-    "role": "Organisatrice",
-    "socialMedia": {
-      "twitch": "vtyukiuwu",
-      "twitter": "@VTYukiUwU",
-      "youtube": "@Yuki____UwU899",
-      "tiktok": "@vtyukiuwu"
-    }
+    "pseudo": "VTYukiUwU",
+    "role": "creatrice",
+    "socials": [
+      { "type": "twitch", "value": "vtyukiuwu" },
+      { "type": "youtube", "value": "@Yuki____UwU899" },
+      { "type": "tiktok", "value": "@vtyukiuwu" },
+      { "type": "twitter", "value": "VTYukiUwU" }
+    ]
   },
   {
-    "id": "2",
-    "name": "VTMizuhiro",
-    "minecraftPseudo": "Mizuhir0_",
-    "role": "Moderateur",
-    "socialMedia": {
-      "twitch": "VTMizuhiro"
-    }
+    "name": "Kamina",
+    "pseudo": "Meadras",
+    "role": "modo",
+    "socials": [
+      { "type": "twitch", "value": "kamicie" },
+      { "type": "tiktok", "value": "@kami_cie" }
+    ]
   },
   {
-    "id": "3",
-    "name": "KamiCie",
-    "minecraftPseudo": "Meadras",
-    "role": "Moderateur",
-    "socialMedia": { "twitch": "kamicie", "tiktok" : "@kami_cie" }
+    "name": "Setsuko",
+    "pseudo": "Setsuko_Aka",
+    "role": "modo",
+    "socials": [
+      { "type": "twitch", "value": "setsuko_aka" },
+      { "type": "youtube", "value": "@Setsuko_Aka" },
+      { "type": "twitter", "value": "setsuko_aka" },
+      { "type": "web", "value": "setsukoaka.fr" }
+    ]
   },
   {
-    "id": "4",
-    "name": "Setsuko_Aka",
-    "minecraftPseudo": "Setsuko_Aka",
-    "role": "Developpeur/Participant",
-    "socialMedia": {
-      "twitch": "setsuko_aka",
-      "twitter": "@setsuko_aka",
-      "youtube": "@Setsuko_Aka",
-      "website": "setsukoaka.fr"
-    }
+    "name": "Mizuhiro",
+    "pseudo": "Mizuhir0_",
+    "role": "modo",
+    "socials": [
+      { "type": "twitch", "value": "VTMizuhiro" }
+    ]
   },
   {
-    "id": "5",
-    "name": "Karoteuh_",
-    "minecraftPseudo": "Karoteuh",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "karoteuh_",
-      "youtube": "@Karoteuh_Kuite",
-      "tiktok": "@karoteuh_"
-    }
+    "name": "Nifrendiel",
+    "pseudo": "Nifrendiel",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "nifrendiel" },
+      { "type": "twitter", "value": "nifrendiel_art" },
+      { "type": "titkok", "value": "@nifrendiel" }
+    ]
   },
   {
-    "id": "6",
-    "name": "DollCheshire",
-    "minecraftPseudo": "dollcheshire",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "dollcheshire",
-      "twitter": "@ChesCatWonder",
-      "youtube": "@dollcheshire",
-      "tiktok": "@dollcheshire"
-    }
+    "name": "Saitilink",
+    "pseudo": "Saitilink",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "saitilink" }
+    ]
   },
   {
-    "id": "7",
-    "name": "BaySone",
-    "minecraftPseudo": "BaySone",
-    "role": "Participant",
-    "socialMedia": { "twitch": "BaySone" }
+    "name": "4bearden",
+    "pseudo": "4bearden",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "4bearden" },
+      { "type": "twitter", "value": "4Bearden_VT" },
+      { "type": "tiktok", "value": "@4bearden" },
+      { "type": "youtube", "value": "@4Bearden" }
+    ]
   },
   {
-    "id": "8",
-    "name": "Chikahiwo",
-    "minecraftPseudo": "Chikahiro",
-    "role": "Participant",
-    "socialMedia": { "twitch": "Chikahiwo" }
+    "name": "Inkcrystalgirl",
+    "pseudo": "inkcrystalgirl",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "inkcristalgirl" },
+      { "type": "tiktok", "value": "@inkcrystalgirl" }
+    ]
   },
   {
-    "id": "9",
-    "name": "eris_here",
-    "minecraftPseudo": "Just_Eris",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "eris_here",
-      "twitter": "@Eris_le_fou",
-      "youtube": "@Eris_here",
-      "tiktok": "@eris_is_here"
-    }
+    "name": "Numia",
+    "pseudo": "Numia",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "numia__" },
+      { "type": "twitter", "value": "Numia__" },
+      { "type": "tiktok", "value": "@numia__" },
+      { "type": "youtube", "value": "@Numia_Vt" }
+    ]
   },
   {
-    "id": "10",
-    "name": "Tsukayuza",
-    "minecraftPseudo": "tsukayu",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "tsukayuza",
-      "youtube": "@Tsukayuza",
-      "tiktok": "@tsukayuza"
-    }
+    "name": "Malidoudou",
+    "pseudo": "Malidoudou",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "malidoudou" },
+      { "type": "twitter", "value": "Malidoudou_"},
+      { "type": "tiktok", "value": "@malidoudou_" },
+      { "type": "youtube", "value": "@MalidoudouVtuber" },
+      { "type": "web", "value": "https://malidoudou.carrd.co" }
+    ]
   },
   {
-    "id": "11",
-    "name": "Hellzetsu_God",
-    "minecraftPseudo": "Hellzetsu",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "hellzetsu_god",
-      "twitter": "Hellzetsu1",
-      "youtube": "@Hellzetsu_Vtuber",
-      "tiktok": "@Hellzetsu_God"
-    }
+    "name": "Rifox",
+    "pseudo": "Rifox",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "rifoxvt" },
+      { "type": "twitter", "value": "rifoxart" },
+      { "type": "tiktok", "value": "@rifoxvtuber" },
+      { "type": "tiktok", "value": "@rifox.art" },
+      { "type": "youtube", "value": "@rifoxart" }
+    ]
   },
   {
-    "id": "12",
-    "name": "Hisoka_VT",
-    "minecraftPseudo": "Hisoka_lpb",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "Hisoka_VT",
-      "twitter":"Hisoka_VTFR",
-      "tiktok": "@askastas_vtfr"
-    }
+    "name": "Couaxia",
+    "pseudo": "Couaxia",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "couaxia" },
+      { "type": "twitter", "value": "couaxia" },
+      { "type": "tiktok", "value": "@couaxia_tv" },
+      { "type": "youtube", "value": "@Couaxia" }
+    ]
   },
   {
-    "id": "13",
-    "name": "toya_yu",
-    "minecraftPseudo": "Yukia45",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "toya_yu",
-      "twitter": "luv_yukia",
-      "tiktok": "@tooya_vt"
-    }
+    "name": "Sorine",
+    "pseudo": "Sorine",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "sorine_e" },
+      { "type": "twitter", "value": "e_sorine" },
+      { "type": "tiktok", "value": "@sorine_e" },
+      { "type": "youtube", "value": "@sorine_e" }
+    ]
   },
   {
-    "id": "14",
-    "name": "Fulbi",
-    "minecraftPseudo": "fulbi1",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "fulbii",
-      "twitter": "fulbi6",
-      "youtube": "@fulbi5454",
-      "tiktok": "@fulbii"
-    }
+    "name": "Dollscherire",
+    "pseudo": "dollcheshire",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "dollcheshire" },
+      { "type": "youtube", "value": "@dollcheshire" },
+      { "type": "tiktok", "value": "@dollcheshire" },
+      { "type": "twitter", "value": "ChesCatWonder" }
+    ]
   },
   {
-    "id": "17",
-    "name": "Shuichi_saihara",
-    "minecraftPseudo": "shuichi_saihara",
-    "role": "Participant",
-    "socialMedia": {
-    }
+    "name": "Orion Yamato",
+    "pseudo": "OrionYamato",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "orion_yamato" },
+      { "type": "twitter", "value": "orionyamato" },
+      { "type": "tiktok", "value": "@orionyamato" }
+    ]
   },
   {
-      "id": "18",
-      "name": "Seba_Gaming",
-      "minecraftPseudo": "Seba_Gaming",
-      "role": "Participant",
-      "socialMedia": {
-      "twitch": "seba__gaming",
-      "twitter": "@KillersSeba",
-      "youtube": "@sebagaming5913",
-      "tiktok": "@sebagaming_vt"
-      },
-      "status": "offline"
+    "name": "Nymya",
+    "pseudo": "Nymya",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "nymya_vt" },
+      { "type": "twitter", "value": "nymya_vt" }
+    ]
   },
   {
-    "id": "19",
-    "name": "Olso",
-    "minecraftPseudo": "olso_squeletton",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "olso_squeletton",
-      "twitter": "@olso_vtuberFR",
-      "tiktok": "@olso_eternal"
-    }
+    "name": "maman mikii",
+    "pseudo": "mamanmiki",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "maman_mikii" },
+      { "type": "twitter", "value": "MamaanNoob" },
+      { "type": "tiktok", "value": "@mikiianneki" },
+      { "type": "youtube", "value": "@Maman_Noob" }
+    ]
   },
   {
-    "id": "20",
-    "name": "Somidream",
-    "minecraftPseudo": "Somidream",
-    "role": "Participant",
-    "socialMedia": {
-      "twitch": "somidream",
-      "twitter": "@SomiDream_",
-      "youtube": "@SomiDream_Replay",
-      "tiktok": "@somidream_"
-    }
+    "name": "Miss_CherryLee",
+    "pseudo": "Miss_CherryLee",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "miss_cherrylee" },
+      { "type": "tiktok", "value": "@Cherry_VOD" },
+      { "type": "youtube", "value": "@misscherrylee" }
+    ]
+  },
+  {
+    "name": "Avril_phantome",
+    "pseudo": "Avril_phantome",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "avril_fantome" },
+      { "type": "twitter", "value": "Avril_Fantome" },
+      { "type": "tiktok", "value": "@avril_fantome" },
+      { "type": "youtube", "value": "@avrilfantome" }
+    ]
+  },
+  {
+    "name": "Anariake",
+    "pseudo": "Anariake",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "anariake" },
+      { "type": "twitter", "value": "Anariake" },
+      { "type": "tiktok", "value": "@anariake" }
+    ]
+  },
+  {
+    "name": "Xanthe_tv",
+    "pseudo": "Xanthe_vt",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "xanthe_tv" },
+      { "type": "twitter", "value": "xanthe_tv" },
+      { "type": "youtube", "value": "@Xanthe_TV" }
+    ]
   }
 ]

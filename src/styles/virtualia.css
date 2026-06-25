@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Press+Start+2P&family=Fredoka:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #d8c9a3;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  color: #2e2417;
+  overflow-x: hidden;
+}
+::selection { background: #76ad44; color: #fff; }
+
+/* ── Focus visible global (WCAG 2.1 AA) ── */
+:focus-visible {
+  outline: 3px solid #76ad44;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ── Reduced motion (WCAG 2.3.3) ── */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes v-drift { 0% { transform: translateX(-10vw); } 100% { transform: translateX(110vw); } }
+@keyframes v-bob { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-22px) rotate(3deg); } }
+@keyframes v-bob2 { 0%,100% { transform: translateY(0) rotate(4deg); } 50% { transform: translateY(-30px) rotate(-4deg); } }
+@keyframes v-flick { 0%,100% { transform: scaleY(1) translateY(0); opacity: 1; } 50% { transform: scaleY(1.25) translateY(-3px); opacity: .85; } }
+@keyframes v-pulseLive { 0%,100% { box-shadow: 0 0 0 0 rgba(210,46,46,.7); } 50% { box-shadow: 0 0 0 8px rgba(210,46,46,0); } }
+@keyframes v-spinSlow { 0% { transform: rotate(0); } 100% { transform: rotate(360deg); } }
+
+/* hover utilities */
+.v-lift { transition: transform .15s ease; }
+.v-lift:hover { transform: translateY(-4px); }
+.v-btn { transition: filter .15s ease, transform .15s ease; }
+.v-btn:hover { filter: brightness(1.08); transform: translateY(-2px); }
+.v-nav { transition: background .15s ease; border-radius: 3px; }
+.v-nav:hover { background: rgba(0,0,0,.25); }
+.v-soc { transition: transform .15s ease; }
+.v-soc:hover { transform: translateY(-2px) scale(1.08); }
+.v-skin { transition: transform .2s ease; }
+.v-skin:hover { transform: scale(1.06); }
+.v-row { transition: background .15s ease; }
+.v-row:hover { background: rgba(255,255,255,.12); }

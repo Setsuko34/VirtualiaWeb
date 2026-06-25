@@ -1,174 +1,67 @@
-import {Users, Globe} from 'lucide-react';
-import {AiOutlineYoutube, AiFillTwitch, AiFillTwitterCircle, AiOutlineTikTok} from "react-icons/ai";
-import {Paper, Chip} from '@mui/material';
-// import { MinecraftSkin3D } from './MinecraftSkin3D';
-import StarlightPoseSkin from './StarlightPoseSkin';
-import {ParticipantInterface} from '../Interface/ParticipantInterface';
-import participantsList from '../data/participants.json';
+import type { CSSProperties } from 'react';
+import { C, FONT } from '../theme';
+import { participants, twitchLogin, ROLE_META, Role, Participant } from '../data/participants';
+import { StarlightPoseSkin } from './StarlightPoseSkin';
+import { SocialLinks } from './SocialLinks';
 import React from "react";
 
-interface ParticipantsSectionProps {
-    CountLive?: number | undefined
-}
+interface Props { liveLogins: string[]; }
 
-export function ParticipantsSection({CountLive}: ParticipantsSectionProps) {
-    // Mock data pour les participants
-    // @ts-ignore
-    const participants: ParticipantInterface[] = participantsList;
+const ORDER: Role[] = ['creatrice', 'modo', 'participant'];
 
-    const getSocialIcon = (platform: string) => {
-        switch (platform) {
-            case 'twitch':
-                return <AiFillTwitch className="w-4 h-4 text-white"/>;
-            case 'youtube':
-                return <AiOutlineYoutube className="w-4 h-4 text-white"/>;
-            case 'twitter':
-                return <AiFillTwitterCircle className="w-4 h-4 text-white"/>;
-            case 'website':
-                return <Globe className="w-4 h-4 text-white"/>;
-            case 'tiktok':
-                return <AiOutlineTikTok className="w-4 h-4 text-white"/>;
-            default:
-                return null;
-        }
-    };
+const dotted: CSSProperties = { background: '#e2d4b2', backgroundImage: 'radial-gradient(rgba(58,42,24,.05) 2px, transparent 2px)', backgroundSize: '22px 22px' };
 
-    return (
-        <section id="participants" className="py-20 px-4 bg-gradient-to-b from-black via-purple-950/20 to-black">
-            <div className="container mx-auto max-w-7xl">
-                <div className="text-center mb-12">
-                    <div className="flex items-center justify-center gap-3 mb-4">
-                        <Users className="w-10 h-10 text-purple-400"/>
-                        <h2 className="text-5xl text-white">Les Participants</h2>
-                    </div>
-                    <p className="text-xl text-gray-400">
-                        Découvrez tous les VTubers qui participent à Virtualia Saison 2
-                    </p>
-                </div>
+export function ParticipantsSection({ liveLogins }: Props) {
+  const groups = ORDER.map((role) => ({
+    role,
+    meta: ROLE_META[role],
+    people: participants.filter((p) => p.role === role),
+  })).filter((g) => g.people.length > 0);
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {participants.map((participant, idx) => (
-                        <Paper
-                            key={participant.id}
-                            elevation={0}
-                            className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 p-6 hover:border-purple-400/50 transition-all hover:scale-105 rounded-lg"
-                            sx={{backgroundColor: 'transparent'}}>
-                            {/* Skin via Starlight + Status */}
-                            <div className="flex flex-col items-center mb-4">
-                                <div className="relative">
-                                    <StarlightPoseSkin
-                                        username={participant.minecraftPseudo}
-                                        width={200}
-                                        height={250}
-                                        className="mx-auto"
-                                        initialPoseIndex={idx}
-                                    />
-                                </div>
+  let globalIndex = 0;
 
-                                <h3 className="text-xl mt-3 text-white text-center">{participant.name}</h3>
-                                <Chip
-                                    label={participant.role}
-                                    className="mt-2 bg-purple-600/50 text-purple-200 hover:bg-purple-600/70"
-                                    sx={{
-                                        backgroundColor: 'rgba(147, 51, 234, 0.5)',
-                                        color: 'rgb(233 213 255)',
-                                        '&:hover': {backgroundColor: 'rgba(147, 51, 234, 0.7)'}
-                                    }}
-                                />
-                            </div>
+  return (
+    <section id="participants" className="px-5 py-10 md:py-[90px]" style={{ ...dotted }}>
+      <div style={{ maxWidth: 1240, margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', marginBottom: 50 }}>
+          <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>⚔ Les Aventuriers</h2>
+          <p style={{ fontSize: 18, color: '#4a3a25', maxWidth: 720, margin: '0 auto' }}>{participants.length} VTubers réunis sur Virtualia. Survolez une carte pour découvrir leurs réseaux.</p>
+        </div>
 
-                            {/* Social Media Links */}
-                            <div className="flex flex-wrap gap-2 justify-center mt-4">
-                                {participant.socialMedia.twitch && (
-                                    <a
-                                        href={`https://twitch.tv/${participant.socialMedia.twitch}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-purple-700/30 hover:bg-purple-600/50 rounded-lg transition-colors"
-                                        title="Twitch"
-                                    >
-                                        {getSocialIcon('twitch')}
-                                    </a>
-                                )}
-                                {participant.socialMedia.youtube && (
-                                    <a
-                                        href={`https://youtube.com/${participant.socialMedia.youtube}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-red-700/30 hover:bg-red-600/50 rounded-lg transition-colors"
-                                        title="YouTube"
-                                    >
-                                        {getSocialIcon('youtube')}
-                                    </a>
-                                )}
-                                {participant.socialMedia.twitter && (
-                                    <a
-                                        href={`https://twitter.com/${participant.socialMedia.twitter.replace('@', '')}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-blue-700/30 hover:bg-blue-600/50 rounded-lg transition-colors"
-                                        title="Twitter"
-                                    >
-                                        {getSocialIcon('twitter')}
-                                    </a>
-                                )}
-                                {participant.socialMedia.tiktok && (
-                                    <a
-                                        href={`https://www.tiktok.com/@${participant.socialMedia.tiktok.replace('@', '')}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-gradient-to-r from-[#69C9D0] to-[#EE1D52] hover:opacity-90 rounded-lg transition-colors"
-                                        title="TikTok"
-                                    >
-                                        {getSocialIcon('tiktok')}
-                                    </a>
-                                )}
-                                {participant.socialMedia.website && (
-                                    <a
-                                        href={`https://${participant.socialMedia.website}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="p-2 bg-gray-700/30 hover:bg-gray-600/50 rounded-lg transition-colors"
-                                        title="Site Web"
-                                    >
-                                        {getSocialIcon('website')}
-                                    </a>
-                                )}
-                            </div>
-                        </Paper>
-                    ))}
-                </div>
-
-                {/* Stats */}
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <Paper
-                        elevation={0}
-                        className="bg-purple-900/20 border border-purple-500/30 p-6 text-center rounded-lg"
-                        sx={{backgroundColor: 'transparent'}}
-                    >
-                        <p className="text-4xl text-purple-400 mb-2">{participants.length}</p>
-                        <p className="text-gray-400">Participants Total</p>
-                    </Paper>
-                    <Paper
-                        elevation={0}
-                        className="bg-green-900/20 border border-green-500/30 p-6 text-center rounded-lg"
-                        sx={{backgroundColor: 'transparent'}}
-                    >
-                        <p className="text-4xl text-green-400 mb-2">
-                            {CountLive !== undefined ? CountLive : participants.filter(p => p.status === 'online').length}
-                        </p>
-                        <p className="text-gray-400">En ligne maintenant</p>
-                    </Paper>
-                    <Paper
-                        elevation={0}
-                        className="bg-pink-900/20 border border-pink-500/30 p-6 text-center rounded-lg"
-                        sx={{backgroundColor: 'transparent'}}
-                    >
-                        <p className="text-4xl text-pink-400 mb-2">∞</p>
-                        <p className="text-gray-400">Aventures à vivre</p>
-                    </Paper>
-                </div>
+        {groups.map((g) => (
+          <div key={g.role} style={{ marginBottom: 44 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 22 }}>
+              <span style={{ fontFamily: FONT.pixel, fontSize: 30, color: C.ink }}>{g.meta.label}</span>
+              <span style={{ flex: 1, height: 5, background: 'repeating-linear-gradient(90deg,#3a2a18 0 8px,transparent 8px 16px)', opacity: 0.4 }} />
             </div>
-        </section>
-    );
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(190px,1fr))', gap: 20 }}>
+              {g.people.map((p: Participant) => {
+                const login = twitchLogin(p);
+                const isLive = !!login && liveLogins.includes(login);
+                const idx = globalIndex++;
+                return (
+                  <div key={p.name} className="v-lift" style={{
+                    position: 'relative', background: C.parchmentLight, border: `4px solid ${C.woodDark}`, borderRadius: 8,
+                    padding: '16px 14px 14px', textAlign: 'center', overflow: 'hidden',
+                    boxShadow: 'inset -4px -4px 0 rgba(58,42,24,.14), inset 4px 4px 0 rgba(255,255,255,.6), 0 6px 0 rgba(58,42,24,.3)',
+                  }}>
+                    <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 7, background: g.meta.accent }} />
+                    {isLive && (
+                      <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 3, fontFamily: FONT.arcade, fontSize: 7, color: '#fff', background: C.red, padding: '5px 6px', borderRadius: 3, animation: 'v-pulseLive 1.6s infinite' }}>● LIVE</div>
+                    )}
+                    <div style={{ height: 170, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', margin: '6px 0 10px', background: `radial-gradient(ellipse at bottom, ${g.meta.accent}66, transparent 70%)` }}>
+                      <StarlightPoseSkin username={p.pseudo} poseIndex={idx} width={136} height={170} />
+                    </div>
+                    <h3 style={{ fontFamily: FONT.pixel, fontSize: 21, margin: '0 0 2px', color: C.ink, wordBreak: 'break-word' }}>{p.name}</h3>
+                    <p style={{ fontFamily: 'monospace', fontSize: 12, color: '#8a7350', margin: '0 0 12px' }}>{p.pseudo}</p>
+                    <SocialLinks socials={p.socials} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
