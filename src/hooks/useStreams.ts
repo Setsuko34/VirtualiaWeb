@@ -34,7 +34,8 @@ export function useStreams() {
           .map((it) => {
             const s = it.stream;
             const p = it.participant;
-            const login = p?.socialMedia?.twitch ? String(p.socialMedia.twitch).toLowerCase() : '';
+            const twitchSocial = Array.isArray(p?.socials) ? p.socials.find((s: any) => s.type === 'twitch') : null;
+            const login = twitchSocial ? String(twitchSocial.value).toLowerCase() : (p?.socialMedia?.twitch ? String(p.socialMedia.twitch).toLowerCase() : '');
             return {
               id: it.id,
               name: p?.name || login || 'Unknown',

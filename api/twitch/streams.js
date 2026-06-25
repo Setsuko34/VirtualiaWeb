@@ -16,6 +16,17 @@
       }
       const participants = loadParticipants();
 
+      function getTwitchLogin(p) {
+        if (Array.isArray(p.socials)) {
+          const t = p.socials.find(s => s.type === 'twitch');
+          return t ? String(t.value).toLowerCase() : null;
+        }
+        if (p.socialMedia && p.socialMedia.twitch) {
+          return String(p.socialMedia.twitch).toLowerCase();
+        }
+        return null;
+      }
+
       const CACHE_FILE = path.join(os.tmpdir(), 'starlight_streams.json');
       const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
       const CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET;
@@ -105,25 +116,21 @@
         const accessToken = await getAppToken();
         if (!accessToken) {
           // no token -> return fallback (no streams) to avoid throwing
-          return participants.map(p => ({ id: p.id, participant: p, stream: null }));
+          return participants.map(p => ({ id: p.name, participant: p, stream: null }));
         }
          const logins = Array.from(
-           new Set(
-             participants
-               .map(p => (p.socialMedia && p.socialMedia.twitch ? String(p.socialMedia.twitch).toLowerCase() : null))
-               .filter(Boolean)
-           )
+           new Set(participants.map(getTwitchLogin).filter(Boolean))
          );
 
          if (logins.length === 0) {
-           return participants.map(p => ({ id: p.id, participant: p, stream: null }));
+           return participants.map(p => ({ id: p.name, participant: p, stream: null }));
          }
 
          const usersUrl = `https://api.twitch.tv/helix/users?${logins.map(l => `login=${encodeURIComponent(l)}`).join('&')}`;
          const usersData = await safeFetchJson(usersUrl, { headers: { 'Client-ID': CLIENT_ID, Authorization: `Bearer ${accessToken}` } });
          const idMap = new Map((usersData.data || []).map(u => [u.id, u.login.toLowerCase()]));
          const userIds = Array.from(idMap.keys());
-         if (userIds.length === 0) return participants.map(p => ({ id: p.id, participant: p, stream: null }));
+         if (userIds.length === 0) return participants.map(p => ({ id: p.name, participant: p, stream: null }));
 
          const streamsUrl = `https://api.twitch.tv/helix/streams?${userIds.map(id => `user_id=${encodeURIComponent(id)}`).join('&')}`;
          const streamsData = await safeFetchJson(streamsUrl, { headers: { 'Client-ID': CLIENT_ID, Authorization: `Bearer ${accessToken}` } });
@@ -135,8 +142,8 @@
          });
 
          return participants.map(p => {
-           const login = p.socialMedia && p.socialMedia.twitch ? String(p.socialMedia.twitch).toLowerCase() : null;
-           return { id: p.id, participant: p, stream: login ? (streamByLogin.get(login) || null) : null };
+           const login = getTwitchLogin(p);
+           return { id: p.name, participant: p, stream: login ? (streamByLogin.get(login) || null) : null };
          });
        }
 
@@ -175,7 +182,7 @@
 
            // Only support GET — but return a JSON warning instead of 4xx/5xx
            if (req.method !== 'GET') {
-             const fallback = participants.map(p => ({ id: p.id, participant: p, stream: null }));
+             const fallback = participants.map(p => ({ id: p.name, participant: p, stream: null }));
              return res.status(200).json({ data: fallback, warning: 'Only GET supported on this endpoint' });
            }
 
@@ -204,11 +211,11 @@
           }
 
           // fallback
-          const fallback = anyCached && Array.isArray(anyCached.data) ? anyCached.data : participants.map(p => ({ id: p.id, participant: p, stream: null }));
+          const fallback = anyCached && Array.isArray(anyCached.data) ? anyCached.data : participants.map(p => ({ id: p.name, participant: p, stream: null }));
           return res.status(200).json({ data: fallback, warning: 'Using fallback due to Twitch API unavailable' });
         } catch (err) {
           console.error('[streams] handler unexpected error', String(err));
-          const fallback = participants.map(p => ({ id: p.id, participant: p, stream: null }));
+          const fallback = participants.map(p => ({ id: p.name, participant: p, stream: null }));
           return res.status(200).json({ data: fallback, warning: 'Internal error' });
         }
       }
