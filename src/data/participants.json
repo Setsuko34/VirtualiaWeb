@@ -43,7 +43,9 @@
     "pseudo": "Nifrendiel",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "nifrendiel" }
+      { "type": "twitch", "value": "nifrendiel" },
+      { "type": "twitter", "value": "nifrendiel_art" },
+      { "type": "titkok", "value": "@nifrendiel" }
     ]
   },
   {
@@ -59,15 +61,19 @@
     "pseudo": "4bearden",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "4bearden" }
+      { "type": "twitch", "value": "4bearden" },
+      { "type": "twitter", "value": "4Bearden_VT" },
+      { "type": "tiktok", "value": "@4bearden" },
+      { "type": "youtube", "value": "@4Bearden" }
     ]
   },
   {
-    "name": "Inkcrystal",
-    "pseudo": "Inkcrystal",
+    "name": "Inkcrystalgirl",
+    "pseudo": "inkcrystalgirl",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "inkcrystal" }
+      { "type": "twitch", "value": "inkcristalgirl" },
+      { "type": "tiktok", "value": "@inkcrystalgirl" }
     ]
   },
   {
@@ -75,7 +81,10 @@
     "pseudo": "Numia",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "numia" }
+      { "type": "twitch", "value": "numia__" },
+      { "type": "twitter", "value": "Numia__" },
+      { "type": "tiktok", "value": "@numia__" },
+      { "type": "youtube", "value": "@Numia_Vt" }
     ]
   },
   {
@@ -83,7 +92,11 @@
     "pseudo": "Malidoudou",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "malidoudou" }
+      { "type": "twitch", "value": "malidoudou" },
+      { "type": "twitter", "value": "Malidoudou_"},
+      { "type": "tiktok", "value": "@malidoudou_" },
+      { "type": "youtube", "value": "@MalidoudouVtuber" },
+      { "type": "web", "value": "https://malidoudou.carrd.co" }
     ]
   },
   {
@@ -91,7 +104,11 @@
     "pseudo": "Rifox",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "rifox" }
+      { "type": "twitch", "value": "rifoxvt" },
+      { "type": "twitter", "value": "rifoxart" },
+      { "type": "tiktok", "value": "@rifoxvtuber" },
+      { "type": "tiktok", "value": "@rifox.art" },
+      { "type": "youtube", "value": "@rifoxart" }
     ]
   },
   {
@@ -99,7 +116,10 @@
     "pseudo": "Couaxia",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "couaxia" }
+      { "type": "twitch", "value": "couaxia" },
+      { "type": "twitter", "value": "couaxia" },
+      { "type": "tiktok", "value": "@couaxia_tv" },
+      { "type": "youtube", "value": "@Couaxia" }
     ]
   },
   {
@@ -107,7 +127,10 @@
     "pseudo": "Sorine",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "sorine" }
+      { "type": "twitch", "value": "sorine_e" },
+      { "type": "twitter", "value": "e_sorine" },
+      { "type": "tiktok", "value": "@sorine_e" },
+      { "type": "youtube", "value": "@sorine_e" }
     ]
   },
   {
@@ -126,7 +149,9 @@
     "pseudo": "OrionYamato",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "orionyamato" }
+      { "type": "twitch", "value": "orion_yamato" },
+      { "type": "twitter", "value": "orionyamato" },
+      { "type": "tiktok", "value": "@orionyamato" }
     ]
   },
   {
@@ -134,15 +159,19 @@
     "pseudo": "Nymya",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "nymya" }
+      { "type": "twitch", "value": "nymya_vt" },
+      { "type": "twitter", "value": "nymya_vt" }
     ]
   },
   {
-    "name": "maman miki",
+    "name": "maman mikii",
     "pseudo": "mamanmiki",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "mamanmiki" }
+      { "type": "twitch", "value": "maman_mikii" },
+      { "type": "twitter", "value": "MamaanNoob" },
+      { "type": "tiktok", "value": "@mikiianneki" },
+      { "type": "youtube", "value": "@Maman_Noob" }
     ]
   },
   {
@@ -150,7 +179,9 @@
     "pseudo": "Miss_CherryLee",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "miss_cherrylee" }
+      { "type": "twitch", "value": "miss_cherrylee" },
+      { "type": "tiktok", "value": "@Cherry_VOD" },
+      { "type": "youtube", "value": "@misscherrylee" }
     ]
   },
   {
@@ -158,7 +189,10 @@
     "pseudo": "Avril_phantome",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "avril_phantome" }
+      { "type": "twitch", "value": "avril_fantome" },
+      { "type": "twitter", "value": "Avril_Fantome" },
+      { "type": "tiktok", "value": "@avril_fantome" },
+      { "type": "youtube", "value": "@avrilfantome" }
     ]
   },
   {
@@ -166,15 +200,19 @@
     "pseudo": "Anariake",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "anariake" }
+      { "type": "twitch", "value": "anariake" },
+      { "type": "twitter", "value": "Anariake" },
+      { "type": "tiktok", "value": "@anariake" }
     ]
   },
   {
-    "name": "Xanthe_vt",
+    "name": "Xanthe_tv",
     "pseudo": "Xanthe_vt",
     "role": "participant",
     "socials": [
-      { "type": "twitch", "value": "xanthe_vt" }
+      { "type": "twitch", "value": "xanthe_tv" },
+      { "type": "twitter", "value": "xanthe_tv" },
+      { "type": "youtube", "value": "@Xanthe_TV" }
     ]
   }
 ]

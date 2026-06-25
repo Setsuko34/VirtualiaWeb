@@ -33,19 +33,23 @@ const GlobeIcon = () => (
   </svg>
 );
 
-const META: Record<SocialType, { icon: React.ReactNode; bg: string; label: string; url: (v: string) => string }> = {
-  twitch:  { icon: <TwitchIcon />,  bg: '#7b4ea8', label: 'Twitch',  url: (v) => `https://twitch.tv/${v}` },
-  youtube: { icon: <YouTubeIcon />, bg: '#c0392b', label: 'YouTube', url: (v) => `https://youtube.com/${v}` },
-  twitter: { icon: <XIcon />,       bg: '#2a2a2a', label: 'X',       url: (v) => `https://x.com/${v.replace('@', '')}` },
-  tiktok:  { icon: <TikTokIcon />,  bg: '#1a1a1a', label: 'TikTok',  url: (v) => `https://tiktok.com/${v}` },
-  web:     { icon: <GlobeIcon />,   bg: '#5fb6c4', label: 'Site',    url: (v) => `https://${v.replace(/^https?:\/\//, '')}` },
+type IconFC = () => React.JSX.Element;
+type MetaEntry = { Icon: IconFC; bg: string; label: string; url: (v: string) => string };
+
+const META: Record<SocialType, MetaEntry> = {
+  twitch:  { Icon: TwitchIcon,  bg: '#7b4ea8', label: 'Twitch',  url: (v) => `https://twitch.tv/${v}` },
+  youtube: { Icon: YouTubeIcon, bg: '#c0392b', label: 'YouTube', url: (v) => `https://youtube.com/${v}` },
+  twitter: { Icon: XIcon,       bg: '#2a2a2a', label: 'X',       url: (v) => `https://x.com/${v.replace('@', '')}` },
+  tiktok:  { Icon: TikTokIcon,  bg: '#1a1a1a', label: 'TikTok',  url: (v) => `https://tiktok.com/${v}` },
+  web:     { Icon: GlobeIcon,   bg: '#5fb6c4', label: 'Site',    url: (v) => `https://${v.replace(/^https?:\/\//, '')}` },
 };
 
 export function SocialLinks({ socials }: { socials: Social[] }) {
   return (
     <div style={{ display: 'flex', gap: 7, justifyContent: 'center', flexWrap: 'wrap' }}>
       {socials.map((s, i) => {
-        const m = META[s.type];
+        const m: MetaEntry | undefined = META[s.type as SocialType];
+        if (!m) return null;
         return (
           <a
             key={i}
@@ -62,7 +66,7 @@ export function SocialLinks({ socials }: { socials: Social[] }) {
               boxShadow: 'inset -2px -2px 0 rgba(0,0,0,.25), inset 2px 2px 0 rgba(255,255,255,.25)',
             }}
           >
-            {m.icon}
+            <m.Icon />
           </a>
         );
       })}
