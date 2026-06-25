@@ -12,7 +12,7 @@ const RULES = [
 
 export function RulesSection() {
   return (
-    <section id="regles" style={{ padding: '90px 20px', background: 'linear-gradient(#2c3a2a,#1f2b22)', color: '#e7dabb' }}>
+    <section id="regles" className="px-5 py-10 md:py-[90px]" style={{ background: 'linear-gradient(#2c3a2a,#1f2b22)', color: '#e7dabb' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 46 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.cream, textShadow: '3px 3px 0 #000' }}>📖 Règles du Royaume</h2>

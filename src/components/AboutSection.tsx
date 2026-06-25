@@ -15,7 +15,7 @@ const dotted: CSSProperties = {
 
 export function AboutSection() {
   return (
-    <section id="about" style={{ position: 'relative', padding: '90px 20px', ...dotted }}>
+    <section id="about" className="px-5 py-10 md:py-[90px]" style={{ position: 'relative', ...dotted }}>
       <div style={{ maxWidth: 1140, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 54 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 14px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>Bienvenue sur Virtualia</h2>
@@ -32,7 +32,7 @@ export function AboutSection() {
           ))}
         </div>
 
-        <div style={{ padding: '38px 40px', ...panel(C.parchmentLight, 5) }}>
+        <div className="px-5 py-6 md:px-10 md:py-[38px]" style={{ ...panel(C.parchmentLight, 5) }}>
           <h3 style={{ fontFamily: FONT.pixel, fontSize: 30, margin: '0 0 18px', color: C.ink }}>📜 Le Concept de la Saison 3</h3>
           <p style={{ fontSize: 16, color: '#4a3a25', lineHeight: 1.7, margin: '0 0 14px' }}>Après deux saisons mémorables, Virtualia repart de zéro sur un monde médiéval-fantasy entièrement neuf. Le modpack <strong>Cisco's Medieval RPG · Dragonfyre</strong>, gonflé de mods custom, transforme le serveur en véritable terrain de jeu RPG : classes, magie, donjons, raids et boss légendaires.</p>
           <p style={{ fontSize: 16, color: '#4a3a25', lineHeight: 1.7, margin: 0 }}>Chaque VTuber forge sa propre légende et participe à l'histoire collective du royaume. Suivez leurs streams, regardez-les bâtir, combattre et collaborer dans cet univers persistant.</p>

@@ -14,7 +14,6 @@ import { useStreams } from './hooks/useStreams';
 import './styles/virtualia.css';
 import React from "react";
 
-// TODO: remplacer par l'IP définitive si elle change
 const SERVER_IP = 'play.vtvirtualia.fr';
 
 export default function App() {
@@ -23,9 +22,16 @@ export default function App() {
 
   return (
     <div style={{ width: '100%', position: 'relative' }}>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:rounded focus:outline-none"
+        style={{ background: '#76ad44', color: '#fff', fontFamily: 'system-ui, sans-serif', fontSize: 15 }}
+      >
+        Aller au contenu principal
+      </a>
       <Header ip={SERVER_IP} />
-      <main>
-        <HeroSection ip={SERVER_IP} streams={streams} loading={loading} videoSrc="/spawn.mp4" />
+      <main id="main-content">
+        <HeroSection streams={streams} loading={loading} videoSrc="/spawn.mp4" />
         <AboutSection />
         <WorldSection />
         <PlanningSection />

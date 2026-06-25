@@ -21,7 +21,7 @@ export function ParticipantsSection({ liveLogins }: Props) {
   let globalIndex = 0;
 
   return (
-    <section id="participants" style={{ padding: '90px 20px', ...dotted }}>
+    <section id="participants" className="px-5 py-10 md:py-[90px]" style={{ ...dotted }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 50 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>⚔ Les Aventuriers</h2>
@@ -50,7 +50,7 @@ export function ParticipantsSection({ liveLogins }: Props) {
                       <div style={{ position: 'absolute', top: 12, right: 12, zIndex: 3, fontFamily: FONT.arcade, fontSize: 7, color: '#fff', background: C.red, padding: '5px 6px', borderRadius: 3, animation: 'v-pulseLive 1.6s infinite' }}>● LIVE</div>
                     )}
                     <div style={{ height: 170, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', margin: '6px 0 10px', background: `radial-gradient(ellipse at bottom, ${g.meta.accent}66, transparent 70%)` }}>
-                      <StarlightPoseSkin username={p.pseudo} poseIndex={idx} />
+                      <StarlightPoseSkin username={p.pseudo} poseIndex={idx} width={136} height={170} />
                     </div>
                     <h3 style={{ fontFamily: FONT.pixel, fontSize: 21, margin: '0 0 2px', color: C.ink, wordBreak: 'break-word' }}>{p.name}</h3>
                     <p style={{ fontFamily: 'monospace', fontSize: 12, color: '#8a7350', margin: '0 0 12px' }}>{p.pseudo}</p>

@@ -15,7 +15,7 @@ export function SocialLinks({ socials }: { socials: Social[] }) {
       {socials.map((s, i) => {
         const m = META[s.type];
         return (
-          <a key={i} href={m.url(s.value)} target="_blank" rel="noopener noreferrer" title={m.label} className="v-soc"
+          <a key={i} href={m.url(s.value)} target="_blank" rel="noopener noreferrer" title={m.label} aria-label={`${m.label} : ${s.value}`} className="v-soc"
             style={{
               width: 34, height: 34, display: 'flex', alignItems: 'center', justifyContent: 'center',
               fontFamily: "'Press Start 2P', sans-serif", fontSize: 9, color: '#fff', textDecoration: 'none',

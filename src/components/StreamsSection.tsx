@@ -10,7 +10,7 @@ export function StreamsSection({ streams, loading }: Props) {
     : 'https://www.multitwitch.tv';
 
   return (
-    <section id="streams" style={{ position: 'relative', padding: '90px 20px', background: 'linear-gradient(#3a2150,#241433)', color: C.cream, overflow: 'hidden' }}>
+    <section id="streams" className="px-5 py-10 md:py-[90px]" style={{ position: 'relative', background: 'linear-gradient(#3a2150,#241433)', color: C.cream, overflow: 'hidden' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto', position: 'relative' }}>
         <div style={{ textAlign: 'center', marginBottom: 44 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: '#fff', textShadow: '3px 3px 0 #000' }}>🔴 Streams en Direct</h2>
@@ -23,7 +23,7 @@ export function StreamsSection({ streams, loading }: Props) {
           </div>
         ) : streams.length > 0 ? (
           <>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(440px,1fr))', gap: 22 }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[22px]">
               {streams.map((s) => (
                 <div key={s.id} style={{ background: '#1a0f26', border: `4px solid ${C.amethyst}`, borderRadius: 8, overflow: 'hidden', boxShadow: '0 8px 0 rgba(0,0,0,.4)' }}>
                   <div style={{ position: 'relative', aspectRatio: '16 / 9', background: '#000' }}>

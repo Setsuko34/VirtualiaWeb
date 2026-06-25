@@ -10,7 +10,7 @@ const BIOMES = [
 
 export function WorldSection() {
   return (
-    <section id="monde" style={{ position: 'relative', padding: '90px 20px', background: 'linear-gradient(#2c3a2a,#1f2b22)', color: '#e7dabb', overflow: 'hidden' }}>
+    <section id="monde" className="px-5 py-10 md:py-[90px]" style={{ position: 'relative', background: 'linear-gradient(#2c3a2a,#1f2b22)', color: '#e7dabb', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, opacity: 0.07, backgroundImage: 'repeating-linear-gradient(45deg,#fff 0 2px,transparent 2px 14px)', pointerEvents: 'none' }} />
       <div style={{ maxWidth: 1140, margin: '0 auto', position: 'relative' }}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
@@ -18,7 +18,7 @@ export function WorldSection() {
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.cream, textShadow: '3px 3px 0 #000' }}>Le Monde de Virtualia</h2>
           <p style={{ fontSize: 18, color: '#c7bb98', maxWidth: 740, margin: '0 auto', lineHeight: 1.6 }}>Un royaume médiéval vivant à explorer : forêts enchantées, donjons oubliés, volcans gardés par les dragons. Chaque biome cache ses quêtes, ses dangers et ses trésors.</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.3fr 1fr', gap: 30, alignItems: 'stretch' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-[30px]">
           {/* TODO: intégrer iframe BlueMap / unmined ici */}
           <div style={{ position: 'relative', border: `5px solid ${C.wood}`, borderRadius: 8, overflow: 'hidden', minHeight: 340, boxShadow: '0 8px 0 rgba(0,0,0,.4)', background: 'repeating-linear-gradient(45deg,#3a4a38 0 16px,#43543f 16px 32px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ textAlign: 'center', color: '#bfcbb0' }}>

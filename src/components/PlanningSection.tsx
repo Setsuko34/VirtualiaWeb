@@ -15,7 +15,7 @@ const dotted: CSSProperties = { background: '#e7dabb', backgroundImage: 'radial-
 
 export function PlanningSection() {
   return (
-    <section id="planning" style={{ padding: '90px 20px', ...dotted }}>
+    <section id="planning" className="px-5 py-10 md:py-[90px]" style={{ ...dotted }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 46 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>📅 Planning de la Saison</h2>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Press+Start+2P&family=Fredoka:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -10,6 +11,22 @@ body {
   overflow-x: hidden;
 }
 ::selection { background: #76ad44; color: #fff; }
+
+/* ── Focus visible global (WCAG 2.1 AA) ── */
+:focus-visible {
+  outline: 3px solid #76ad44;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ── Reduced motion (WCAG 2.3.3) ── */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
 @keyframes v-drift { 0% { transform: translateX(-10vw); } 100% { transform: translateX(110vw); } }
 @keyframes v-bob { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-22px) rotate(3deg); } }
