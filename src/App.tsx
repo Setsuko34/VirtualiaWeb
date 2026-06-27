@@ -10,6 +10,7 @@ import { ParticipantsSection } from './components/ParticipantsSection';
 import { RulesSection } from './components/RulesSection';
 import { Footer } from './components/Footer';
 import { OldMapModal } from './components/OldMapModal';
+import { CreditsModal } from './components/CreditsModal';
 import { useStreams } from './hooks/useStreams';
 import './styles/virtualia.css';
 import React from "react";
@@ -19,6 +20,7 @@ const SERVER_IP = 'play.vtvirtualia.fr';
 export default function App() {
   const { streams, loading, liveLogins } = useStreams();
   const [mapOpen, setMapOpen] = useState(false);
+  const [creditsOpen, setCreditsOpen] = useState(false);
 
   return (
     <div style={{ width: '100%', position: 'relative' }}>
@@ -39,8 +41,9 @@ export default function App() {
         <ParticipantsSection liveLogins={liveLogins} />
         <RulesSection />
       </main>
-      <Footer onOpenMap={() => setMapOpen(true)} />
+      <Footer onOpenMap={() => setMapOpen(true)} onOpenCredits={() => setCreditsOpen(true)} />
       <OldMapModal open={mapOpen} onClose={() => setMapOpen(false)} />
+      <CreditsModal open={creditsOpen} onClose={() => setCreditsOpen(false)} />
       <Analytics />
     </div>
   );

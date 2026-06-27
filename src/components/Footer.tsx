@@ -1,7 +1,7 @@
 import React from "react";
 import { C, FONT } from '../theme';
 
-export function Footer({ onOpenMap }: { onOpenMap: () => void }) {
+export function Footer({ onOpenMap, onOpenCredits }: { onOpenMap: () => void; onOpenCredits: () => void }) {
   return (
     <footer style={{ background: `linear-gradient(${C.woodBar2}, ${C.woodDark})`, color: '#e7dabb', padding: '54px 20px 30px', borderTop: '6px solid #2e1a0e' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 30, justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -15,6 +15,10 @@ export function Footer({ onOpenMap }: { onOpenMap: () => void }) {
         <div>
           <h4 style={{ fontFamily: FONT.pixel, fontSize: 20, margin: '0 0 12px', color: C.cream }}>Archives</h4>
           <button onClick={onOpenMap} className="v-btn" style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontFamily: FONT.pixel, fontSize: 16, color: '#fff', padding: '10px 16px', background: C.grass, border: `3px solid ${C.grassBorder}`, borderRadius: 4, boxShadow: 'inset -2px -2px 0 rgba(0,0,0,.25), inset 2px 2px 0 rgba(255,255,255,.3)' }}>⬇ Télécharger les anciennes maps</button>
+        </div>
+        <div>
+          <h4 style={{ fontFamily: FONT.pixel, fontSize: 20, margin: '0 0 12px', color: C.cream }}>À propos</h4>
+          <button onClick={onOpenCredits} className="v-btn" style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8, fontFamily: FONT.pixel, fontSize: 16, color: '#fff', padding: '10px 16px', background: C.amethyst, border: `3px solid ${C.amethystBorder}`, borderRadius: 4, boxShadow: 'inset -2px -2px 0 rgba(0,0,0,.25), inset 2px 2px 0 rgba(255,255,255,.3)' }}>✨ Crédits</button>
         </div>
         <div>
           <h4 style={{ fontFamily: FONT.pixel, fontSize: 20, margin: '0 0 12px', color: C.cream }}>Communauté</h4>
