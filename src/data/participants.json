@@ -101,7 +101,7 @@
   },
   {
     "name": "Rifox",
-    "pseudo": "Rifox",
+    "pseudo": "RiFoxx",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "rifoxvt" },
@@ -146,7 +146,7 @@
   },
   {
     "name": "Orion Yamato",
-    "pseudo": "OrionYamato",
+    "pseudo": "Orion_Yamato",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "orion_yamato" },
@@ -206,13 +206,35 @@
     ]
   },
   {
-    "name": "Xanthe_tv",
-    "pseudo": "Xanthe_vt",
+    "name": "Xanthe",
+    "pseudo": "Xanthe_TV",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "xanthe_tv" },
       { "type": "twitter", "value": "xanthe_tv" },
       { "type": "youtube", "value": "@Xanthe_TV" }
     ]
+  },
+  {
+    "name": "Meizy",
+    "pseudo": "Meizy",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "meizy_11" },
+      { "type": "twitter", "value": "Meizy_UwU" },
+      { "type": "tiktok", "value": "@meizy.uwu"},
+      { "type": "youtube", "value": "@kouky2141" }
+    ]
+  },
+  {
+    "name": "Dracko",
+    "pseudo": "000dracko000",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "000dracko000" },
+      { "type": "tiktok", "value": "@000dracko000"},
+      { "type": "youtube", "value": "@000dracko000"}
+    ]
   }
+
 ]
