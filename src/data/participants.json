@@ -50,7 +50,7 @@
   },
   {
     "name": "Saitilink",
-    "pseudo": "Saitilink",
+    "pseudo": "saitilink",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "saitilink" }
@@ -58,7 +58,7 @@
   },
   {
     "name": "4bearden",
-    "pseudo": "4bearden",
+    "pseudo": "4Bden",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "4bearden" },
@@ -69,7 +69,7 @@
   },
   {
     "name": "Inkcrystalgirl",
-    "pseudo": "inkcrystalgirl",
+    "pseudo": "InkCristalGirl",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "inkcristalgirl" },
@@ -180,8 +180,8 @@
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "miss_cherrylee" },
-      { "type": "tiktok", "value": "@Cherry_VOD" },
-      { "type": "youtube", "value": "@misscherrylee" }
+      { "type": "tiktok", "value": "@misscherrylee" },
+      { "type": "youtube", "value": "@Cherry_VOD" }
     ]
   },
   {
