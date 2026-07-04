@@ -2,16 +2,9 @@
   {
     "tag": "OPEN",
     "col": "#76ad44",
-    "when": "Jour J",
+    "when": "04/07/2026",
     "title": "Ouverture du serveur",
     "desc": "Lancement officiel de la Saison 3, tous en stream !"
-  },
-  {
-    "tag": "EVENT",
-    "col": "#a55fd0",
-    "when": "Hebdo",
-    "title": "Soirée événement",
-    "desc": "Mini-jeux, build battles et défis communautaires."
   },
   {
     "tag": "BOSS",
@@ -23,14 +16,14 @@
   {
     "tag": "Nether",
     "col": "#c2552a",
-    "when": "Une semaine après le lancement",
+    "when": "11/07/2026",
     "title": "Ouverture du Nether",
     "desc": "Le Nether est désormais accessible à tous."
   },
   {
     "tag": "L'End",
     "col": "#7b4ea8",
-    "when": "Deux semaines après le lancement",
+    "when": "18/07/2026",
     "title": "Ouverture de l'End",
     "desc": "L'End est désormais accessible à tous."
   },
@@ -41,5 +34,4 @@
     "title": "Aventures solo",
     "desc": "Chaque VTuber avance son histoire en live."
   }
-
 ]

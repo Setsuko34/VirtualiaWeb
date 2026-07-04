@@ -11,7 +11,7 @@ export function PlanningSection() {
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 46 }}>
           <h2 style={{ fontFamily: FONT.pixel, fontWeight: 700, fontSize: 'clamp(38px,6vw,64px)', margin: '0 0 12px', color: C.ink, textShadow: '3px 3px 0 #c9b78d' }}>📅 Planning de la Saison</h2>
-          <p style={{ fontSize: 17, color: '#4a3a25' }}>Les grands rendez-vous communautaires. <em>Horaires indicatifs — à ajuster.</em></p>
+          <p style={{ fontSize: 17, color: '#4a3a25' }}>Les grands rendez-vous communautaires. <em>Horaires indicatifs</em></p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 18 }}>
           {planning.map((e) => (
