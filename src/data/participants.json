@@ -185,6 +185,15 @@
     ]
   },
   {
+    "name": "Arthes_vt",
+    "pseudo": "Arthes__",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "arthes_vt" },
+      { "type": "tiktok", "value": "@arthes_27" }
+    ]
+  },
+  {
     "name": "Avril_phantome",
     "pseudo": "Avril_Fantome",
     "role": "participant",
