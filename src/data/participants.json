@@ -12,7 +12,7 @@
   },
   {
     "name": "Kamina",
-    "pseudo": "Meadras",
+    "pseudo": "Kamina_33",
     "role": "modo",
     "socials": [
       { "type": "twitch", "value": "kamicie" },
@@ -124,7 +124,7 @@
   },
   {
     "name": "Sorine",
-    "pseudo": "Sorine",
+    "pseudo": "S0rine",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "sorine_e" },
@@ -156,7 +156,7 @@
   },
   {
     "name": "Nymya",
-    "pseudo": "Nymya",
+    "pseudo": "Captain_Nym ",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "nymya_vt" },
@@ -235,6 +235,25 @@
       { "type": "tiktok", "value": "@000dracko000"},
       { "type": "youtube", "value": "@000dracko000"}
     ]
+  },
+  {
+    "name": "Minhs_Art",
+    "pseudo": "Minhs_Art",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "minhs_art" },
+      { "type": "tiktok", "value": "@minhs_art" },
+      { "type": "twitter", "value": "Minhs_Art"},
+      { "type": "web", "value": "https://www.minhs.fr" }
+    ]
+  },
+  {
+    "name": "Xiriavt",
+    "pseudo": "Xixi_te_neme",
+    "role": "participant",
+    "socials": [
+      { "type": "twitch", "value": "xiriavt" },
+      { "type": "twitter", "value": "VXiria17738"}
+    ]
   }
-
 ]
