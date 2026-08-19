@@ -57,37 +57,6 @@
     ]
   },
   {
-    "name": "4bearden",
-    "pseudo": "4Bden",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "4bearden" },
-      { "type": "twitter", "value": "4Bearden_VT" },
-      { "type": "tiktok", "value": "@4bearden" },
-      { "type": "youtube", "value": "@4Bearden" }
-    ]
-  },
-  {
-    "name": "Inkcrystalgirl",
-    "pseudo": "InkCristalGirl",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "inkcristalgirl" },
-      { "type": "tiktok", "value": "@inkcrystalgirl" }
-    ]
-  },
-  {
-    "name": "Numia",
-    "pseudo": "Numia",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "numia__" },
-      { "type": "twitter", "value": "Numia__" },
-      { "type": "tiktok", "value": "@numia__" },
-      { "type": "youtube", "value": "@Numia_Vt" }
-    ]
-  },
-  {
     "name": "Malidoudou",
     "pseudo": "Malidoudou",
     "role": "participant",
@@ -112,17 +81,6 @@
     ]
   },
   {
-    "name": "Couaxia",
-    "pseudo": "Couaxiaa",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "couaxia" },
-      { "type": "twitter", "value": "couaxia" },
-      { "type": "tiktok", "value": "@couaxia_tv" },
-      { "type": "youtube", "value": "@Couaxia" }
-    ]
-  },
-  {
     "name": "Sorine",
     "pseudo": "S0rine",
     "role": "participant",
@@ -134,44 +92,12 @@
     ]
   },
   {
-    "name": "Dollscherire",
-    "pseudo": "dollcheshire",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "dollcheshire" },
-      { "type": "youtube", "value": "@dollcheshire" },
-      { "type": "tiktok", "value": "@dollcheshire" },
-      { "type": "twitter", "value": "ChesCatWonder" }
-    ]
-  },
-  {
-    "name": "Orion Yamato",
-    "pseudo": "Orion_Yamato",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "orion_yamato" },
-      { "type": "twitter", "value": "orionyamato" },
-      { "type": "tiktok", "value": "@orionyamato" }
-    ]
-  },
-  {
     "name": "Nymya",
     "pseudo": "Captain_Nym",
     "role": "participant",
     "socials": [
       { "type": "twitch", "value": "nymya_vt" },
       { "type": "twitter", "value": "nymya_vt" }
-    ]
-  },
-  {
-    "name": "maman mikii",
-    "pseudo": "maman_mikii",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "maman_mikii" },
-      { "type": "twitter", "value": "MamaanNoob" },
-      { "type": "tiktok", "value": "@mikiianneki" },
-      { "type": "youtube", "value": "@Maman_Noob" }
     ]
   },
   {
@@ -191,27 +117,6 @@
     "socials": [
       { "type": "twitch", "value": "arthes_vt" },
       { "type": "tiktok", "value": "@arthes_27" }
-    ]
-  },
-  {
-    "name": "Avril_phantome",
-    "pseudo": "Avril_Fantome",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "avril_fantome" },
-      { "type": "twitter", "value": "Avril_Fantome" },
-      { "type": "tiktok", "value": "@avril_fantome" },
-      { "type": "youtube", "value": "@avrilfantome" }
-    ]
-  },
-  {
-    "name": "Anariake",
-    "pseudo": "Anariake",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "anariake" },
-      { "type": "twitter", "value": "Anariake" },
-      { "type": "tiktok", "value": "@anariake" }
     ]
   },
   {
@@ -243,26 +148,6 @@
       { "type": "twitch", "value": "000dracko000" },
       { "type": "tiktok", "value": "@000dracko000"},
       { "type": "youtube", "value": "@000dracko000"}
-    ]
-  },
-  {
-    "name": "Minhs_Art",
-    "pseudo": "Minhs_Art",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "minhs_art" },
-      { "type": "tiktok", "value": "@minhs_art" },
-      { "type": "twitter", "value": "Minhs_Art"},
-      { "type": "web", "value": "https://www.minhs.fr" }
-    ]
-  },
-  {
-    "name": "Xiriavt",
-    "pseudo": "Xixi_te_neme",
-    "role": "participant",
-    "socials": [
-      { "type": "twitch", "value": "xiriavt" },
-      { "type": "twitter", "value": "VXiria17738"}
     ]
   }
 ]
